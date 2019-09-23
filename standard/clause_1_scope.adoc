@@ -1,5 +1,4 @@
 == Scope
-[NOTE]
-====
-Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.
-====
+
+This OGC CDB Extension defines the behavior and requirements for encoding vector data in a GeoPackage container for use in a CDB data store. The requirements and related guidance are grounded in the existing CDB Core requirements and the GeoPackage core requirements for vector data. As such, any GeoPackage that is to be referenced/used in a CDB data store must be 1.) compliant with the CDB core requirements for vector data and 2.) compliant with the GeoPackage core requirements for encoding vector data. Please note that some of the core GeoPackage requirements are profiled in order to be consistent with the CDB core requirements as specified in https://portal.opengeospatial.org/files/15-113r5[Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure]. Further, there are associated normative additions to the CDB Core to accommodate not just the use of GeoPackages but also other vector storage encodings/containers.
+
