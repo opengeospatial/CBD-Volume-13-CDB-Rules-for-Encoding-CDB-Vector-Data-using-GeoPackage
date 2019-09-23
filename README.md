@@ -1,6 +1,6 @@
 # Standard template
 
-This GitHub repository contains the content for an OGC standard.
+This GitHub repository contains the content for a draft GeoPackage extension for a CDB data store.
 
 The repo is organized as follows:
 
