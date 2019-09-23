@@ -1,9 +1,24 @@
-== Clauses not Containing Normative Material
+== Informative 
 
-Paragraph
+This section provides information for understanding the role of using GeoPackage containers to encode vector data in a CDB data store. One key and overriding requirement to consider when implementing this CDB extension is that the structure if the content of the vector data in GeoPackage is also dictated by the core requirements in the CDB Standard. Examples would be for restirctions on the coordinate reference system (CRS) allowed and the size (extents) of the tiles.
 
-=== Clauses not containing normative material sub-clause 1
+=== What is a GeoPackage?
 
-Paragraph
+A GeoPackage is the SQLite container and the OGC GeoPackage Encoding Standard governs the rules and requirements of content stored in a GeoPackage container. The GeoPackage Standard defines the schema for a GeoPackage, including table definitions, integrity assertions, format limitations, and content constraints. The required and supported content of a GeoPackage is entirely defined in the standard.
 
-=== Clauses not containing normative material sub-clause 2
+=== What is CDB (or a CDB)?
+
+CDB is an open standard defining physical, logical, and conceptual models for a single,
+“versionable,” virtual representation of the earth. CDB structured data stores provide for
+a geospatial content and model definition repository that is plug-and-play interoperable
+between database authoring workstations. Moreover, a CDB structured data store can be
+used as a common online (or runtime) repository from which various simulator clientdevices
+can simultaneously retrieve and modify, in real-time, relevant information to
+perform their respective runtime simulation tasks (OGC CDB Standard, 2018).
+
+=== Why use GeoPackages in a CDB?
+
+The geometries supported by the GeoPackage standard are consistent with the OGC Simple Feature Standard. A GeoPackage 
+is capable of storing feature geometries as Points, LineStrings, Polygons, MultiPoints, MultiLineStrings, MultiPolygons, and GeomCollection. A strength of the GeoPackage is the portability and utility in non-traditional simulation environments, 
+such as hand-held tactical devices. These strengths and the self describing nature of a GeoPackage created demand not just in the traditional modelling and simulation community but also other domains for having the ability to use GeoPackages in a CDB data store.
+
