@@ -1,4 +1,4 @@
-:Title: OGC (add title text)
+:Title: OGC CDB GeoPackage Extension
 :titletext: {Title}
 :doctype: book
 :encoding: utf-8
@@ -18,11 +18,11 @@
 |Submission Date: <yyyy-mm-dd>
 |Approval Date:   <yyyy-mm-dd>
 |Publication Date:   <yyyy-mm-dd>
-|External identifier of this OGC(R) document: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
+|External identifier of this OGC(R) document: http://www.opengis.net/doc/IS/cdb-geopackage/1.0
 |Internal reference number of this OGC(R) document:    YY-nnnrx
 |Version: n.n
-|Category: OGC(R) <Implementation / Abstract Specification / Best Practice>
-|Editor:   <Name(s) of Editor or Editors>
+|Category: OGC(R) Draft Implementation Standard
+|Editor:   Carl Reed, others
 |===
 
 [cols = "^", frame = "none"]
@@ -33,7 +33,7 @@
 [cols = "^", frame = "none", grid = "none"]
 |===
 |*Copyright notice*
-|Copyright (C) <year> Open Geospatial Consortium
+|Copyright (C) 2019 Open Geospatial Consortium
 |To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
 |===
 
@@ -48,7 +48,7 @@ Recipients of this document are invited to submit, with their comments, notifica
 
 [width = "50%", grid = "none"]
 |===
-|Document type:   	OGC® <Standard/Abstract Specification/Best Practice>
+|Document type:   	OGC® Standard
 |Document subtype:   	if applicable
 |Document stage:   	Draft
 |Document language: 	English
