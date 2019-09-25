@@ -1,5 +1,6 @@
-== Clause containing normative material
-Paragraph
+== Requirements for Using GeoPackages in a CDB Data Store
+This section defines the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are by reference to specific requirements in oth the GeoPackage and CDB standards. The referenced requirements are known as dependent requirments as they specifically reference requirements as specified in the CDB Core and GeoPackage Core standards documents.
+
 
 === Requirement Class A or Requirement A Example
 Paragraph – intro text for the requirement class.
@@ -11,16 +12,4 @@ include::requirements/requirements_class.adoc[]
 ==== Requirement 1
 Paragraph - intro text for the requirement.
 
-Use the following table for Requirements, number sequentially.
-
-include::requirements/requirement.adoc[]
-
-Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
-
-[width="90%",options="header"]
-|===
-|Names |Definition |Data types and values |Multiplicity and use
-|name 1 |definition of name 1 |float |One or more (mandatory)
-|name 2 |definition of name 2 |character string type, not empty |Zero or one (optional)
-|name 3 |definition of name 3 |GML:: Point PropertyType |One (mandatory)
-|===
+include::requirements/REQ001.adoc
