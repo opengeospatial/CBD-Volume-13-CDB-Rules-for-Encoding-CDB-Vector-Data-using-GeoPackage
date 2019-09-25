@@ -1,6 +1,6 @@
 == Informative 
 
-This section provides information for understanding the role of using GeoPackage containers to encode vector data in a CDB data store. One key and overriding requirement to consider when implementing this CDB extension is that the structure if the content of the vector data in GeoPackage is also dictated by the core requirements in the CDB Standard. Examples would be for restirctions on the coordinate reference system (CRS) allowed and the size (extents) of the tiles.
+This section provides information for understanding the role of using GeoPackage containers to encode vector data in a CDB data store. One key and overriding requirement to consider when implementing this CDB extension is that the structure if the content of the vector data in GeoPackage is also dictated by the core requirements in the CDB Standard. Examples would be for restrictions on the coordinate reference system (CRS) allowed and the size (extents) of the tiles.
 
 === What is a GeoPackage?
 
@@ -34,5 +34,8 @@ The four initial use cases identified in the OGC Discussion Paper are:
 . Store each CDB LOD as a layer in GeoPackage: Design approach #3 incorporates the lessons learn from experimentation with approach #2 to limit the number of tables within a GeoPackage and reduce the number of files in a CDB.
 . Store each CDB Geocell as a layer in GeoPackage:  Design approach #4 extends design approach #3 to have a single GeoPackage per geotile of CDB. In this approach, the tables in the GeoPackage correspond to each data store of CDB (such as road networks, geospecific points, etc.).
 
-The research and test performed and reported in the Discussion Paper was refined and provided the basis of the work done in the GeoPackage in CDB Interoperability Experiment.
+In all cases, the experimentation focused on just vector data encoding as Shapefiles.
+
+The research and tests performed and reported in the Discussion Paper were refined and provided the basis for the work done in the OGC GeoPackage in CDB Interoperability Experiment. In the interoperability experiment, Use Case 1 above was further refined into 4 options - each a possible approach for one to one conversions. All options were tested and reported on by the particpants. Many of the lessons learned, independent of the IE focus on Shapefiles already in a CDB, are germane to any process or workflow in which data are stored in a GeoPackage container that is to then be stored in a CDB data store.
+
 
