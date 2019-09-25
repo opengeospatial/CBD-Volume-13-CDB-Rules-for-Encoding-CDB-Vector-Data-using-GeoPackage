@@ -22,3 +22,17 @@ The geometries supported by the GeoPackage standard are consistent with the OGC 
 is capable of storing feature geometries as Points, LineStrings, Polygons, MultiPoints, MultiLineStrings, MultiPolygons, and GeomCollection. A strength of the GeoPackage is the portability and utility in non-traditional simulation environments, 
 such as hand-held tactical devices. These strengths and the self describing nature of a GeoPackage created demand not just in the traditional modelling and simulation community but also other domains for having the ability to use GeoPackages in a CDB data store.
 
+=== Identifed Use Cases
+While considerable previous work focused on the process and requirements for transforming CDB structured vector Shapefiles into GeoPackages, the identified use cases are apropos when defining how to store and access any other vector/geometry content regardless of encoding or format. However, vector data encodings and containers developed outside a CDB data transformation process would also require definition of additional requirements. For example, a GeoJSON encoding of feature data would require a transformation to "break" the GeoJSON file into the appropriate tile and LoD structure in order to be consistent with the CDB data store and structure requirements. The same would be true of vector data provided as none CDB structured Shapefiles, CityGML encodings, Oracle Spatial structured data, Esri GeoDataBase files and so on. 
+
+Both the OGC OGC CDB - Leveraging GeoPackage Discussion Paper and the OGC CDB Vector Data in GeoPackage Interoperability Experiment Engineering Report focused on a constrained set of well defined use cases related to the current CDB structure and how to best use GeoPackage for resolving each of the use cases. As such, dealing with non-CDB structured vector content was not addressed. 
+
+The four initial use cases identified in the OGC Discussion Paper are:
+
+. Replace each Shapefile with a GeoPackage: The easiest way to integrate a GeoPackage container into a CDB data store is to replace each Shapefile in a CDB data store with a GeoPackage.
+. Make each CDB tile a layer in a single GeoPackage: Constructing each vector tile within CDB as a table within a GeoPackage for a given CDB dataset is a straightforward approach to utilize GeoPackage capabilities and significantly reduce file counts in a CDB (note that in GeoPackage a table is known as a layer).
+. Store each CDB LOD as a layer in GeoPackage: Design approach #3 incorporates the lessons learn from experimentation with approach #2 to limit the number of tables within a GeoPackage and reduce the number of files in a CDB.
+. Store each CDB Geocell as a layer in GeoPackage:  Design approach #4 extends design approach #3 to have a single GeoPackage per geotile of CDB. In this approach, the tables in the GeoPackage correspond to each data store of CDB (such as road networks, geospecific points, etc.).
+
+The research and test performed and reported in the Discussion Paper was refined and provided the basis of the work done in the GeoPackage in CDB Interoperability Experiment.
+
