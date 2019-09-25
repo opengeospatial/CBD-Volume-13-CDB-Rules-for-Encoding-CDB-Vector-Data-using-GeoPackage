@@ -1,15 +1,17 @@
 == Requirements for Using GeoPackages in a CDB Data Store
-This section defines the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are by reference to specific requirements in oth the GeoPackage and CDB standards. The referenced requirements are known as dependent requirments as they specifically reference requirements as specified in the CDB Core and GeoPackage Core standards documents.
+This section defines the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are by reference to specific requirements in both the GeoPackage and CDB standards. The referenced requirements are known as dependent requirments as they specifically reference requirements as specified in the CDB Core and GeoPackage Core standards documents.
 
 
-=== Requirement Class A or Requirement A Example
-Paragraph – intro text for the requirement class.
+=== Requirement CDB Core
+The following requirement defines how vector data in a GeoPackage is to be structured based on requirements specified in the CDB Core document.
+
+include::requirements/REQ001.adoc[]
 
 Use the following table for Requirements Classes.
 
 include::requirements/requirements_class.adoc[]
 
-==== Requirement 1
+==== Requirement 3
 Paragraph - intro text for the requirement.
 
-include::requirements/REQ001.adoc
+include::requirements/REQ003.adoc[]
