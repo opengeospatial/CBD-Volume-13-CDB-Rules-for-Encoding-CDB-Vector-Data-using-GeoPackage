@@ -18,7 +18,7 @@ At regular intervals, conversions of all the .adoc documents to html and pdf wil
 ## Building
 
 To produce the HTML of the standard run `asciidoctor --safe -a data-uri -o
-standard_document.html cdb-vector-data-in-gpkg.adoc`.
+cdb-vector-data-in-gpkg.html cdb-vector-data-in-gpkg.adoc`.
 
 To produce the PDF of the standard run `asciidoctor-pdf --safe -o
-standard_document.pdf cdb-vector-data-in-gpkg.adoc`
+cdb-vector-data-in-gpkg.pdf cdb-vector-data-in-gpkg.adoc`
