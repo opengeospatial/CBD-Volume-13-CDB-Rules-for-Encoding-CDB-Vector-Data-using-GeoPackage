@@ -2,9 +2,9 @@
 
 ## Content
 
-This folder contains the text for the standard
+This folder contains the text for the extension
 
-* standard_document.adoc - the main standard document with references to all sections
+* cdb-vector-data-in-gpkg.adoc - the main extension document with references to all sections
 * remaining adocs - each section of the standard document is in a separate document: follow directions in each document to populate
 * figures - figures go here
 * images - Image files for graphics go here. Image files for figures go in the "figures" directory. Only place in here images not used in figures (e.g., as parts of tables, as logos, etc.)
@@ -13,10 +13,12 @@ This folder contains the text for the standard
 * abstract_tests - the Abstract Test Suite comprising one test for every requirement, optional
 * UML - UML diagrams, if applicable
 
+At regular intervals, conversions of all the .adoc documents to html and pdf will be made.
+
 ## Building
 
 To produce the HTML of the standard run `asciidoctor --safe -a data-uri -o
-standard_document.html standard_document.adoc`.
+standard_document.html cdb-vector-data-in-gpkg.adoc`.
 
 To produce the PDF of the standard run `asciidoctor-pdf --safe -o
-standard_document.pdf standard_document.adoc`
+standard_document.pdf cdb-vector-data-in-gpkg.adoc`
