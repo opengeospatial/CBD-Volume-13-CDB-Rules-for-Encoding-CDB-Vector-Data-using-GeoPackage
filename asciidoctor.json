@@ -1,6 +1,6 @@
 {
         "0":  {
-                "OGC_doc_number": "19-999",
+                "OGC_doc_number": "19-054",
                 "urn":"http://www.opengis.net/doc/IS/cdb-geopackage/1.0",
                 "title":"OGC CDB GeoPackage Extension",
                 "path":"standard/cdb-vector-data-in-gpkg.adoc",
