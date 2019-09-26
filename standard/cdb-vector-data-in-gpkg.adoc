@@ -18,9 +18,9 @@
 |Submission Date: <yyyy-mm-dd>
 |Approval Date:   <yyyy-mm-dd>
 |Publication Date:   <yyyy-mm-dd>
-|External identifier of this OGC(R) document: http://www.opengis.net/doc/IS/cdb-geopackage/1.0
+|External identifier of this OGC(R) document: http://www.opengis.net/doc/IS/cdb-geopackage/1.2
 |Internal reference number of this OGC(R) document:    19-054
-|Version: n.n
+|Version: 1.2
 |Category: OGC(R) Draft Implementation Standard
 |Editor:   Carl Reed, others
 |===
@@ -100,7 +100,7 @@ add or remove annexes after "A" as necessary
 include::annex-a.adoc[]
 
 <<<
-include::annex-n.adoc[]
+include::annex-b.adoc[]
 
 <<<
 ////
