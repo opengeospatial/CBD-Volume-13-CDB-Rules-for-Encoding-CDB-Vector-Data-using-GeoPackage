@@ -1,4 +1,4 @@
-# CDB Vector Data in Geopackage Extension
+# OGC 19-054 CDB Vector Data in Geopackage Extension
 
 This GitHub repository contains the content for a draft GeoPackage extension for a CDB data store.
 
