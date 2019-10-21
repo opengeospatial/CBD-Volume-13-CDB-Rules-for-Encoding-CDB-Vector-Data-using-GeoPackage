@@ -1,4 +1,4 @@
-:Title: OGC CDB GeoPackage Extension
+:Title: Optional CDB GeoPackage Extension
 :titletext: {Title}
 :doctype: book
 :encoding: utf-8
