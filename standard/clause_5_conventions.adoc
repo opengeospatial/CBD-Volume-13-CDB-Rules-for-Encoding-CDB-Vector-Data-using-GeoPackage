@@ -4,7 +4,7 @@ This sections provides details and examples for any conventions used in the docu
 === Identifiers
 Identifiers
 
-The normative provisions in this standard are denoted by the URI http://www.opengis.net/spec/cdb-vector-geopackage/1.0.
+The normative provisions in this standard are denoted by the URI http://www.opengis.net/spec/cdb-vector-geopackage/1.2
 
 All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.
 
