@@ -37,5 +37,8 @@ a geometric shape with known properties that is the result of the tiling (tessel
 
 A GeoPackage that contains features per clause Features and/or tiles per clause Tiles and row(s) in the gpkg_contents table with data_type column values of "features" and/or "tiles" describing the user data tables.
 
+=== *Version*
+
+A collection of pure CDB Datasets and/or user-defined datasets. Please see section 3.2 of Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure for details on the CDB versioning strategy and structure.
 
 == Abbreviations
