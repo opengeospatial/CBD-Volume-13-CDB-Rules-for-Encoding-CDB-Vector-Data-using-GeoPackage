@@ -1,11 +1,20 @@
 == Requirements for Using GeoPackages in a CDB Data Store
-This section defines the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are _by reference_ to specific requirements in both the GeoPackage and CDB standards. The referenced requirements are known as dependent requirements. These specifically reference requirements as specified in the CDB Core and GeoPackage Core standards documents.
+This section defines the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are _by reference_ to specific requirements in both the GeoPackage and CDB standards. The referenced requirements are known as _dependent_ requirements. For example, the GeoPackage standrds specifies that any valid GeoPackage shall have a file extension of .gpkg. The optional CDB GeoPackage extension specifies the same requirement.
 
+=== Requirement that one and only vector format can be in a CDB version
+The following requirement clearly states that any given version has only one allowed vector format. Currently, the two supported formats are the traditional Shapefiles and now GeoPackages. However, a CDB data store may have multiple versions. Therefore, the Shapefile format could be used in one version and GeoPackages used in another version.
+
+include::requirements/REQ001.adoc[]
+
+=== GeoPackage Requirements
+The following requirement class captures all of the GeoPackage requirements that need to be implemented in order to be a fully compliant GeoPackage for use in a CDB data store. Please note that GeoPackage Requirement xx on Coordiante Reference Systems has been profiled to be consistent with the mandatory requirements in the CDB standard.
+
+include::requirements/REQ001.adoc[]
 
 === Requirement CDB Core
 The following requirement defines how vector data in a GeoPackage is to be structured based on requirements specified in the CDB Core document.
 
-include::requirements/REQ001.adoc[]
+include::requirements/REQ003.adoc[]
 
 Use the following table for Requirements Classes.
 
