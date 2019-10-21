@@ -1,5 +1,5 @@
 == Requirements for Using GeoPackages in a CDB Data Store
-This section defines the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are by reference to specific requirements in both the GeoPackage and CDB standards. The referenced requirements are known as dependent requirments as they specifically reference requirements as specified in the CDB Core and GeoPackage Core standards documents.
+This section defines the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are _by reference_ to specific requirements in both the GeoPackage and CDB standards. The referenced requirements are known as dependent requirements. These specifically reference requirements as specified in the CDB Core and GeoPackage Core standards documents.
 
 
 === Requirement CDB Core
