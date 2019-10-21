@@ -38,4 +38,4 @@ In all cases, the experimentation focused on just vector data encoding as Shapef
 
 The research and tests performed and reported in the Discussion Paper were refined and provided the basis for the work done in the OGC GeoPackage in CDB Interoperability Experiment. In the interoperability experiment, Use Case 1 above was further refined into 4 options - each a possible approach for one to one conversions. All options were tested and reported on by the particpants. Many of the lessons learned, independent of the IE focus on Shapefiles already in a CDB, are germane to any process or workflow in which data are stored in a GeoPackage container that is to then be stored in a CDB data store.
 
-
+If you wish to transform CDB structured Shapefiles into CDB structured GeoPackages, please refer to the Volume 14: OGC CDB Guidance on Conversion of CDB Shapefiles into CDB GeoPackages (Best Practice) _add URL and description when document is available_. 
