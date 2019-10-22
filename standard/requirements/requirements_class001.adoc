@@ -1,0 +1,14 @@
+[cols="1,4",width="90%"]
+|===
+2+|*Requirements Class - GeoPackage Core Requirements for Vector data.* {set:cellbgcolor:#CACCCE}
+2+|/req/core/geopackage-core-vector-data {set:cellbgcolor:#FFFFFF}
+|Target type |Encoding
+|Dependency |WGS-84 definition
+|Dependency |Compression Algorithms
+|Dependency |Units of measure
+|Requirement 6 {set:cellbgcolor:#CACCCE} |/req/core/raster-imagery-compression {set:cellbgcolor:#FFFFFF}
+|Requirement 7 {set:cellbgcolor:#CACCCE} |/req/core/uom {set:cellbgcolor:#FFFFFF}
+|Requirement 8 {set:cellbgcolor:#CACCCE} |/req/core/crs {set:cellbgcolor:#FFFFFF}
+|Requirement 9 {set:cellbgcolor:#CACCCE} |/req/core/crs-client {set:cellbgcolor:#FFFFFF}
+|Requirement 10 {set:cellbgcolor:#CACCCE} |/req/core/coordinates {set:cellbgcolor:#FFFFFF}
+|===
