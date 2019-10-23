@@ -1,14 +1,15 @@
 [cols="1,4",width="90%"]
 |===
-2+|*Requirements Class - GeoPackage Core Requirements for Vector data.* {set:cellbgcolor:#CACCCE}
-2+|/req/core/geopackage-core-vector-data {set:cellbgcolor:#FFFFFF}
+2+|*Requirements Class - CDB GeoPackage Core Requirements for Vector data.* {set:cellbgcolor:#CACCCE}
+2+|/req/core/cdb-geopackage-core-vector-data {set:cellbgcolor:#FFFFFF}
 |Target type |Encoding
-|Dependency |WGS-84 definition
-|Dependency |Compression Algorithms
-|Dependency |Units of measure
-|Requirement 6 {set:cellbgcolor:#CACCCE} |/req/core/raster-imagery-compression {set:cellbgcolor:#FFFFFF}
-|Requirement 7 {set:cellbgcolor:#CACCCE} |/req/core/uom {set:cellbgcolor:#FFFFFF}
-|Requirement 8 {set:cellbgcolor:#CACCCE} |/req/core/crs {set:cellbgcolor:#FFFFFF}
-|Requirement 9 {set:cellbgcolor:#CACCCE} |/req/core/crs-client {set:cellbgcolor:#FFFFFF}
-|Requirement 10 {set:cellbgcolor:#CACCCE} |/req/core/coordinates {set:cellbgcolor:#FFFFFF}
+|Dependency |GeoPackage 1.1 or GeoPackage 1.2
+|Requirement 2 {set:cellbgcolor:#CACCCE} |Req 1: A GeoPackage SHALL be a SQLite [A5] database file using version 3 of the SQLite file format [A6] [A7]. The first 16 bytes of a GeoPackage SHALL be the null-terminated ASCII [B4] string "SQLite format 3" {set:cellbgcolor:#FFFFFF}
+|Requirement 3 {set:cellbgcolor:#CACCCE} |Req 2: A GeoPackage SHALL contain a value of 0x47504B47 ("GPKG" in ASCII) in the "application_id" field of the SQLite database header to indicate that it is a GeoPackage. A GeoPackage SHALL contain an appropriate value in "user_version" field of the SQLite database header to indicate its version. The value SHALL be in integer with a major version, two-digit minor version, and two-digit bug-fix. For GeoPackage Version 1.2 this value is 0x000027D8
+ {set:cellbgcolor:#FFFFFF}
+|Requirement 4 {set:cellbgcolor:#CACCCE} |Req 3: A GeoPackage SHALL have the file extension name ".gpkg".
+ {set:cellbgcolor:#FFFFFF}
+|Requirement 5 {set:cellbgcolor:#CACCCE} |Req 4: A GeoPackage SHALL only contain the data elements (tables, columns, or values) and SQL constructs (views, constraints, or triggers) specified in the core of this encoding standard (Features, Tiles, and Attributes).
+ {set:cellbgcolor:#FFFFFF}
+|Requirement 6 {set:cellbgcolor:#CACCCE} |Req 5: The columns of tables in a GeoPackage SHALL only be declared using one of the data types specified in table GeoPackage Data Types. {set:cellbgcolor:#FFFFFF}
 |===
