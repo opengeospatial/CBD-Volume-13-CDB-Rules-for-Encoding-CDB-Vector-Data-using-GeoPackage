@@ -1,19 +1,23 @@
 [appendix]
-:appendix-caption: Annex
-== Conformance Class Abstract Test Suite (Normative)
+:appendix-caption: Annex B - GeoPackage and Shapefile Geometry Types
+== GeoPackage and Shapefile Geometry types cross walk.
 
-[NOTE]
-Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
-
-=== Conformance Class A
-
-==== Requirement 1
-[cols=">20h,<80d",width="100%"]
+[cols=",,,",options="header",]
 |===
-|Test id: |/conf/conf-class-a/req-name-1
-|Requirement: |/req/req-class-a/req-name-1
-|Test purpose: | Verify that...
-|Test method: | Inspect...
-|===
+|*Value* | *GeoPackage geometry type* |*Shapefile Vector type* |*Fields*
+|0 ||Null shape |None
+|1 |Point | Point | X, Y
+|3 |Linestring | Polyline |MBR, Number of parts, Number of points, Parts, Points
+|5 |Polygon |Polygon |MBR, Number of parts, Number of points, Parts, Points
+|8 |MultiPoint |MultiPoint |MBR, Number of points, Points
+|11 |Point | PointZ a| X, Y, Z _Optional_: M
+|13 | Linestring | PolylineZ a| _Mandatory_: MBR, Number of parts, Number of points, Parts, Points, Z range, Z array _Optional_: M range, M array
+|15 |Polygon | PolygonZ a| _Mandatory_: MBR, Number of parts, Number of points, Parts, Points, Z range, Z array _Optional_: M range, M array
+|18 | Multipoint | MultiPointZ a| _Mandatory_: MBR, Number of points, Points, Z range, Z array _Optional_: M range, M array
+|21 |Point | PointM |X, Y, M
+|23 | Linestring | PolylineM a| _Mandatory_: MBR, Number of parts, Number of points, Parts, Points _Optional_: M range, M array
+|25 | Polygon | PolygonM a| _Mandatory_: MBR, Number of parts, Number of points, Parts, Points _Optional_: M range, M array
+|28 |MultiPoint | MultiPointM a| _Mandatory_: MBR, Number of points, Points _Optional Fields_: M range, M array
+|31 | Surface | MultiPatch a| _Mandatory_: MBR, Number of parts, Number of points, Parts, Part types, Points, Z range, Z array _Optional_: M range, M array
 
-==== Requirement 2
+|===
