@@ -1,5 +1,6 @@
 [appendix]
 :appendix-caption: Annex B - GeoPackage and Shapefile Geometry Types
+
 == GeoPackage and Shapefile Geometry types cross walk.
 
 [cols=",,,",options="header",]
