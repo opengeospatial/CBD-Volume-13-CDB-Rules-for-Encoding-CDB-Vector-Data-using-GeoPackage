@@ -1,0 +1,7 @@
+[width="90%",cols="2,6"]
+|===
+|*Requirement 5* GeoPackage Vector Features {set:cellbgcolor:#CACCCE}|http://www.opengis.net/spec/cdb/1.0/geopackage/geopackage-features +
+ +
+Any CDB structured GeoPackage that encodes features _SHALL_ be compliant with GeoPackage Requirements 18 through 33 inclusive and GeoPackage Requirements 146 and 150. Please see Requirement 20 of the GeoPackage standard for additional clarification on vector feature geometry types. These requirements are included in Clause 2.1 Features of the GeoPackage Standard.
+{set:cellbgcolor:#FFFFFF}
+|===
