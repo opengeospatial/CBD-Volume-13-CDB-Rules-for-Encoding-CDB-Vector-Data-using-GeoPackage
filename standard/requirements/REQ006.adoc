@@ -1,6 +1,6 @@
 [width="90%",cols="2,6"]
 |===
-|*Requirement 4* GeoPackage polygon readers {set:cellbgcolor:#CACCCE}
+|*Requirement 6* GeoPackage polygon readers {set:cellbgcolor:#CACCCE}
 |http://www.opengis.net/spec/cdb/1.0/geopackage/polygon-rules-reader +
  +
 
