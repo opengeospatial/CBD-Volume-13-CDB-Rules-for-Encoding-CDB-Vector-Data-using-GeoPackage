@@ -12,24 +12,31 @@ The following requirement clarifies the geometry types allowed for instances of 
 include::requirements/REQ002.adoc[]
 
 === GeoPackage Requirements
-The following requirement class captures all of the GeoPackage requirements that need to be implemented in order to be a fully compliant GeoPackage for use in a CDB data store. Please note that GeoPackage Requirement xx on Coordiante Reference Systems has been profiled to be consistent with the mandatory requirements in the CDB standard.
+This section defines the GeoPackage requirements that need to be considered when implementing a CDB compliant GeoPackage for use in a CDB data store. This section also provides any clarifications and/or profiles of those requirements.
+
+==== GeoPackage Requirements - core
+The following requirement captures all of the core GeoPackage requirements that need to be implemented in order to be a fully compliant GeoPackage for use in a CDB data store. Please note that GeoPackage Requirements 10 and 11 on Coordiante Reference Systems has been profiled to be consistent with the mandatory requirements in the CDB standard.
 
 include::requirements/REQ003.adoc[]
 
-The following requirement clarifies (profiles) the GeoPackage requirement for specifying a Coordinate Reference System (CRS). 
+==== GeoPackage Requirements constrained by CDB - CRS Profile
+The following requirement clarifies (profiles) GeoPackage requirements 10 and 11 for specifying a Coordinate Reference System (CRS). The GeoPackage standard uses the term Spatial Reference System instead of Coordinate Reference System. This is because GeoPackage standard was designed to be flexible and to be able to accommodate any reference system. As such, GeoPackage tables that deal with CRS us the "spatial_ref" literal as part of the table name.
 
 include::requirements/REQ004.adoc[]
+
+Please also note the definition of Volume 1 CDB Core Requirement 7 Units of Measure and Requirement 111 Vextex CRS for guidance on proper and compliant use of CRS in a CDB compliant GeoPackage.
+
+==== GeoPackage Requirements Options - Features
+The following requirement clarifies the GeoPackage requirements that shall be followed when implementing vector fectures in a GeoPackage. Please note that GeoPackage geometry and feature definitions are consistent with the OGC Simple Features model and ISO 19107.
+
+include::requirements/REQ005.adoc[]
 
 === Requirement CDB Core
 The following requirement defines how vector data in a GeoPackage is to be structured based on requirements specified in the CDB Core document.
 
-include::requirements/REQ005.adoc[]
+include::requirements/REQ006.adoc[]
 
 Use the following table for Requirements Classes.
 
 include::requirements/requirements_class.adoc[]
 
-==== Requirement 3
-Paragraph - intro text for the requirement.
-
-include::requirements/REQ003.adoc[]
