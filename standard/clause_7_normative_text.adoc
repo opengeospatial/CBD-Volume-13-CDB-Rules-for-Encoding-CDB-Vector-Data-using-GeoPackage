@@ -6,8 +6,8 @@ The following requirement clearly states that any given version has only one all
 
 include::requirements/REQ001.adoc[]
 
-=== Requirement on number of geometry types
-The following requirement clarifies the geometry types alloweed for vector data referenced to a tile.
+=== Requirement on geometry types and feature instances
+The following requirement clarifies the geometry types allowed for instances of feature data referenced to a tile. Essentially, all instances of a specific feature type (code?) SHALL be of the same geometry type.
 
 include::requirements/REQ002.adoc[]
 
