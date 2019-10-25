@@ -6,18 +6,24 @@ The following requirement clearly states that any given version has only one all
 
 include::requirements/REQ001.adoc[]
 
-=== GeoPackage Requirements
-The following requirement class captures all of the GeoPackage requirements that need to be implemented in order to be a fully compliant GeoPackage for use in a CDB data store. Please note that GeoPackage Requirement xx on Coordiante Reference Systems has been profiled to be consistent with the mandatory requirements in the CDB standard.
+=== Requirement on number of geometry types
+The following requirement clarifies the geometry types alloweed for vector data referenced to a tile.
 
 include::requirements/REQ002.adoc[]
 
-The following requirement class clarifies (profiles) the GeoPackage requirement for specifying a Coordinate Reference System (CRS). 
+=== GeoPackage Requirements
+The following requirement class captures all of the GeoPackage requirements that need to be implemented in order to be a fully compliant GeoPackage for use in a CDB data store. Please note that GeoPackage Requirement xx on Coordiante Reference Systems has been profiled to be consistent with the mandatory requirements in the CDB standard.
 
+include::requirements/REQ003.adoc[]
+
+The following requirement clarifies (profiles) the GeoPackage requirement for specifying a Coordinate Reference System (CRS). 
+
+include::requirements/REQ004.adoc[]
 
 === Requirement CDB Core
 The following requirement defines how vector data in a GeoPackage is to be structured based on requirements specified in the CDB Core document.
 
-include::requirements/REQ003.adoc[]
+include::requirements/REQ005.adoc[]
 
 Use the following table for Requirements Classes.
 
