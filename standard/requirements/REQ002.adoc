@@ -1,6 +1,6 @@
 [width="90%",cols="2,6"]
 |===
-|*Requirement 3* Vector GeoPackage Geometry Type {set:cellbgcolor:#CACCCE}|http://www.opengis.net/spec/cdb/1.2/geopackage/vector-geom-rule +
+|*Requirement 2* Vector GeoPackage Geometry Type {set:cellbgcolor:#CACCCE}|http://www.opengis.net/spec/cdb/1.2/geopackage/vector-geom-rule +
  +
 All instances of the feature _SHALL_ be of the same Geometry type. While the GeoPackage model supports encoding of 8 different types that can be stored in the same GeoPackage, the CDB standard requires a maximum of one geometry type for point features, a maximum of one geometry type for lineal features and a maximum of one geometry type for polygon features for each tile (for a maximum of 3 feature geometry types per tile). {set:cellbgcolor:#FFFFFF}
 |===
