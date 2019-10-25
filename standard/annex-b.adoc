@@ -1,6 +1,5 @@
 [appendix]
-Annex B
-
+:appendix-caption: Annex
 == GeoPackage and Shapefile Geometry types cross walk.
 
 [cols=",,,",options="header",]
