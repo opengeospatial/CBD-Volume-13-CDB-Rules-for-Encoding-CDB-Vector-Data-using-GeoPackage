@@ -1,5 +1,5 @@
 == Requirements for Using GeoPackages in a CDB Data Store
-This section defines the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are _by reference_ to specific requirements in both the GeoPackage and CDB standards. The referenced requirements are known as _dependent_ requirements. For example, the GeoPackage standrds specifies that any valid GeoPackage shall have a file extension of .gpkg. The optional CDB GeoPackage extension specifies the same requirement.
+This section documents the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are _by reference_ to specific requirements in both the GeoPackage and CDB standards. The referenced requirements are known as _dependent_ requirements. For example, the GeoPackage standrds specifies that any valid GeoPackage shall have a file extension of .gpkg. The optional CDB GeoPackage extension specifies the same requirement.
 
 === Requirement that one and only vector format can be in a CDB version
 The following requirement clearly states that any given version has only one allowed vector format. Currently, the two supported formats are the traditional Shapefiles and now GeoPackages. However, a CDB data store may have multiple versions. Therefore, the Shapefile format could be used in one version and GeoPackages used in another version.
@@ -31,12 +31,15 @@ The following requirement clarifies the GeoPackage requirements that shall be fo
 
 include::requirements/REQ005.adoc[]
 
-=== Requirement CDB Core
+==== Requirement CDB Core - Need to discuss this one. Could be changed to a backend process and not a client.
 The following requirement defines how vector data in a GeoPackage is to be structured based on requirements specified in the CDB Core document.
 
 include::requirements/REQ006.adoc[]
 
-Use the following table for Requirements Classes.
+=== CDB Requirements for a CDB compliant GeoPackage Vector encoding
+This section documents the CDB requirements that need to be considered when implementing a CDB compliant GeoPackage for use in a CDB data store. This section also provides any clarifications and/or profiles of those requirements.
 
-include::requirements/requirements_class.adoc[]
+==== CDB Vector Data Core Requirements
+The following requirement profiles the CDB general data representation core requirements class: Requirements Class - General Data Representation (Requirements 6-10). Please note that the profile excludes the raster imagery compression requirement. The related CDB conformance class documented in Annex A of the CDB Core standard is A.1.1	General CDB Data Store and Implementation.
 
+include::requirements/REQ007.adoc[]
