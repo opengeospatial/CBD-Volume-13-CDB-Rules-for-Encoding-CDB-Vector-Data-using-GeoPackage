@@ -1,7 +1,7 @@
 [width="90%",cols="2,6"]
 |===
 |*Requirement 8* CDB Tiles/Geocells and LoD relationships for GeoPackage {set:cellbgcolor:#CACCCE}
-|http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-geopackage-tiles-and-lods +
+|http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-geopackage-tiles-and-lods +
  +
 Any CDB structured GeoPackage that encodes vector features _SHALL_ be compliant with CDB Tiles/Geocells and LoD relationships 11 through 16 and 41 inclusive These requirements are documented in CDB Requirements Class *Tiles/Geocells and LoD relationships (11-16 and 41)*.
 {set:cellbgcolor:#FFFFFF}
