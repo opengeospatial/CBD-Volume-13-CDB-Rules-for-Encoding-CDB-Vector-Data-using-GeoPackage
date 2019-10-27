@@ -1,6 +1,7 @@
 [width="90%",cols="2,6"]
 |===
-|*Requirement 7* CDB general data requirements for GeoPackage data: Profile {set:cellbgcolor:#CACCCE}|http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-geopackage-data +
+|*Requirement 7* CDB general data requirements for GeoPackage data: Profile {set:cellbgcolor:#CACCCE}
+|http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-geopackage-data +
  +
 Any CDB structured GeoPackage that encodes vector features _SHALL_ be compliant with CDB Requirements 7 through 10. These requirements are documented in CDB Requirements Class *General Data Representation Requirements*. Please note that Requirement 6 image compression is excluded.
 {set:cellbgcolor:#FFFFFF}
