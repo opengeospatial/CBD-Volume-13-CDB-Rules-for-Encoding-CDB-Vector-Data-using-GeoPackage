@@ -1,8 +1,8 @@
 [width="90%",cols="2,6"]
 |===
-|*Requirement 9* vector dataset limit  {set:cellbgcolor:#CACCCE}
-|http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core-vector dataset limit +
+|*Requirement 9* vector tiled data  {set:cellbgcolor:#CACCCE}
+|http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core-vector-tiled-data +
  +
-For positive LODs, each Tile-LOD of a GeoPackage vector dataset _SHALL_ have no more than 16,384 points to describe the features, whether the file contains point, lineal, or polygon features.  For negative LODs, this limit SHALL be recursively divided by 4 until it reaches the value 1. This is the same as Requirement 64 in the core CDB standard.
+Any CDB structured GeoPackage that encodes vector features SHALL be compliant with CDB Core Tiled Data Requirements 64 through 67 inclusive These requirements are documented in the CDB Core Requirements Class Tiled Datasets (64-67).
 {set:cellbgcolor:#FFFFFF}
 |===
