@@ -26,8 +26,18 @@ a set of *features* from a *dataset*
 NOTE: In this standard, 'collection' is used as a synonym for 'feature
 collection'. This is done to make this document easier to understand for those that are not geo-experts.
 
-=== *GeoPackage file*
+=== *linestring*
+curve composed of straight-line segments (aka line) [ISO 19136:2007]
 
+=== *point*
+0-dimensional geometric primitive, representing a position [ISO 19136:2007]
+
+Note to entry: The boundary of a point is the empty set.
+
+=== *polygon*
+planar surface defined by 1 exterior boundary and 0 or more interior boundaries [ISO 19136:2007] 
+
+=== *GeoPackage file*
 a platform-independent SQLite database file that contains GeoPackage data and metadata tables with specified definitions, integrity assertions, format limitations and content constraints.
 
 === *tile*
@@ -36,6 +46,16 @@ a geometric shape with known properties that is the result of the tiling (tessel
 === *Valid GeoPackage*
 
 A GeoPackage that contains features per clause Features and/or tiles per clause Tiles and row(s) in the gpkg_contents table with data_type column values of "features" and/or "tiles" describing the user data tables.
+
+=== *vector and vector data*
+
+quantity having direction as well as magnitude
+
+Note to entry: A directed line segment represents a vector if the length and direction of the line segment are equal to the magnitude and direction of the vector. The term vector data refers to data that represents the spatial configuration of features as a set of directed line segments. [ISO 19123:2005]
+
+=== *vector geometry*
+
+representation of geometry through the use of constructive geometric primitives [ISO 19107:2003]
 
 === *Version*
 
