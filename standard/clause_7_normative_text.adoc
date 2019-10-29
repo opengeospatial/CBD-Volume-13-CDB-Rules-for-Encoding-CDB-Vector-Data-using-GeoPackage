@@ -50,6 +50,8 @@ The following requirement references the CDB requirements for the rules for tili
 include::requirements/REQ008.adoc[]
 
 ==== GeoPackage in CDB - Tiled Vector Data Sets
-Clause 3.6 - Tiled Data Sets specifies the requirements and provides detailed supporting information on the tiling structure and LoD structure for tiled vector data. Note: All vector data sets are tiled in a CDB structured data store. The level-of-detail organization for GeoPackage vector datasets mimics the concept of map scaling commonly found in cartography. Please especially note Requirement 64 in the Core .
+Clause 3.6 - Tiled Data Sets specifies the requirements and provides detailed supporting information on the tiling structure and LoD structure for tiled vector data. Note: All vector data sets are tiled in a CDB structured data store. The level-of-detail organization for GeoPackage vector datasets mimics the concept of map scaling commonly found in cartography. Please especially note Requirement 64 in the Core. Also pay careful attendtion to the tables and equations for calculating the latitude and longitude elements of the file names for the GeoPackages.
 
 include::requirements/REQ009.adoc[]
+
+==== CDB GeoPackage Vector Datasets
