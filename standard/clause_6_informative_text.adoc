@@ -22,8 +22,30 @@ The geometries supported by the GeoPackage standard are consistent with the OGC 
 is capable of storing feature geometries as Points, LineStrings, Polygons, MultiPoints, MultiLineStrings, MultiPolygons, and GeomCollection. A strength of the GeoPackage is the portability and utility in non-traditional simulation environments, 
 such as hand-held tactical devices. These strengths and the self describing nature of a GeoPackage created demand not just in the traditional modelling and simulation community but also other domains for having the ability to use GeoPackages in a CDB data store.
 
+=== Geometry and Geometry Types
+When working with vector feature data, one of the properties is the feature's geometry. A geometry is an ordered sequence of vertices that are connected by straight line segments or circular arcs. The semantics of the geometry are determined by its type. The GeoPackage core supports six geometry types. Other types may be used but their definition and use requires development of a GeoPackage extension. The GeoPackage in CDB standard is based on the core geometry types and does not require any extensions to support additional geometries.
+
+Further, the GeoPackage standard allows the additional specification of "Z" values and "M" values. Z values may be thought of as "elevation". However, the use of "elevation" is inexact. Instead this standard uses the term _height_ to define the semantics of the Z values. "M" stands for _measurement_. Measurements could be such properties as "temperature" or "reflectance". Whether Z and or M values are part of a given GeoPackage is determined by what values are set for the _z_ and _m_ columns in the GeoPackage Geometry Columns Table Definition. These are optional values.
+
+The following table provides a summary of the GeoPackage geometry types in relation to Shapefile geometries. As can be seen, the GeoPackage core set of gemetry types is 100 percent compatible with the Shapefile geometry types.
+
+[options="header",]
+|===
+|*GeoPackage Geometry Type* |*Shapefile Vector Type*
+|Point | Point 
+|Linestring | Polyline 
+|Polygon |Polygon
+|MultiPoint |MultiPoint 
+|Point with "z" column set| PointZ
+|Linestring with "z" column set| PolylineZ 
+|Polygon with "z" column set| PolygonZ
+|Linestring with "m" column set| PolylineM
+|Polygon with "M" column set| PolygonM
+|MultiPoint with "m" column set| MultiPointM 
+|===
+
 === Identifed Use Cases
-While considerable previous work focused on the process and requirements for transforming CDB structured vector Shapefiles into GeoPackages, the identified use cases are apropos when defining how to store and access any other vector/geometry content regardless of encoding or format. However, vector data encodings and containers developed outside a CDB data transformation process would also require definition of additional requirements. For example, a GeoJSON encoding of feature data would require a transformation to "break" the GeoJSON file into the appropriate tile and LoD structure in order to be consistent with the CDB data store and structure requirements. The same would be true of vector data provided as none CDB structured Shapefiles, CityGML encodings, Oracle Spatial structured data, Esri GeoDataBase files and so on. 
+While previous work focused on the process and requirements for transforming CDB structured vector Shapefiles into GeoPackages, the identified use cases are apropos when defining how to store and access any other vector/geometry content regardless of encoding or format. However, vector data encodings and containers developed outside a CDB data transformation process would also require definition of additional requirements. For example, a GeoJSON encoding of feature data would require a transformation to "break" the GeoJSON file into the appropriate tile and LoD structure in order to be consistent with the CDB data store and structure requirements. The same would be true of vector data provided as none CDB structured Shapefiles, CityGML encodings, Oracle Spatial structured data, Esri GeoDataBase files and so on. 
 
 Both the OGC OGC CDB - Leveraging GeoPackage Discussion Paper and the OGC CDB Vector Data in GeoPackage Interoperability Experiment Engineering Report focused on a constrained set of well defined use cases related to the current CDB structure and how to best use GeoPackage for resolving each of the use cases. As such, dealing with non-CDB structured vector content was not addressed. 
 
