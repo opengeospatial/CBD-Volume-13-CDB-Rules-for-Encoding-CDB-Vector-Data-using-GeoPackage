@@ -3,7 +3,7 @@
 |*Requirement 6* GeoPackage polygon readers {set:cellbgcolor:#CACCCE}
 |http://www.opengis.net/spec/cdb/1.0/geopackage/polygon-rules-reader +
  +
-
+NOTE: This requirement needs to be discussed. Perhaps should be a data prep rule.
  Although the above are guidelines, GeoPackage readers _SHALL_ handle the following cases with proper error handling 
  and reporting for Polygon geometries:
 
