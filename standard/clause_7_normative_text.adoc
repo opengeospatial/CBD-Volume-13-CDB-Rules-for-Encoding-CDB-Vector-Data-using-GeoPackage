@@ -37,7 +37,7 @@ The following requirement defines how vector data in a GeoPackage is to be struc
 include::requirements/REQ006.adoc[]
 
 === CDB Requirements for a CDB compliant GeoPackage Vector encoding
-This section documents the CDB requirements that need to be considered when implementing a CDB compliant GeoPackage for use in a CDB data store. This section also provides any clarifications and/or profiles of those requirements.
+This section documents the CDB requirements that need to be considered when implementing a CDB compliant GeoPackage for use in a CDB data store. This section also provides any clarifications and/or profiles of those requirements. The majority of the requirements referenced in this section are detailed in Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure (hereafter known as CDB Core). In the GeoPackage in CDB standard, requirements are specified that themselves reference specific requirements in the Core
 
 ==== CDB Vector Data Core Requirements
 The following requirement profiles the CDB general data representation core requirements class: Requirements Class - General Data Representation (Requirements 6-10). Please note that the profile excludes the raster imagery compression requirement. The related CDB conformance class documented in Annex A of the CDB Core standard is A.1.1	General CDB Data Store and Implementation.
@@ -49,3 +49,7 @@ The following requirement references the CDB requirements for the rules for tili
 
 include::requirements/REQ008.adoc[]
 
+==== GeoPackage in CDB - Tiled Vector Data Sets
+Clause 3.6 - Tiled Data Sets specifies the requirements and provides detailed supporting information on the tiling structure and LoD structure for tiled vector data. Note: All vector data sets are tiled in a CDB structured data store. The level-of-detail organization for GeoPackage vector datasets mimics the concept of map scaling commonly found in cartography. Please especially note Requirement 64 in the Core .
+
+include::requirements/REQ009.adoc[]
