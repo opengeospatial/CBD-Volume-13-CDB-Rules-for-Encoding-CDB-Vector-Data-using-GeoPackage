@@ -45,7 +45,7 @@ The following requirement profiles the CDB general data representation core requ
 include::requirements/REQ007.adoc[]
 
 ==== CDB Tiling and LoD Rules for Structuring GeoPackages
-The following requirement references the CDB requirements for the rules for tiling the vector data in a GeoPackage and determination of the level of detail (LoD) in which the GeoPackage should be stored. Complete details the CDB tiling and LoD storage model are found in CDB Volume 1 and clause "CDB Concepts".
+The following requirement references the CDB requirements for the rules for tiling the vector data in a GeoPackage and determination of the level of detail (LoD) in which the GeoPackage should be stored. Complete details for the CDB tiling and LoD storage model are found in CDB Volume 1 and clause "CDB Concepts".
 
 include::requirements/REQ008.adoc[]
 
