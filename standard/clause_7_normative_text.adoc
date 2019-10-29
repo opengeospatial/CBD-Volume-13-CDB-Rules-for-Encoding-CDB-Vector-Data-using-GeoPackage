@@ -43,3 +43,9 @@ This section documents the CDB requirements that need to be considered when impl
 The following requirement profiles the CDB general data representation core requirements class: Requirements Class - General Data Representation (Requirements 6-10). Please note that the profile excludes the raster imagery compression requirement. The related CDB conformance class documented in Annex A of the CDB Core standard is A.1.1	General CDB Data Store and Implementation.
 
 include::requirements/REQ007.adoc[]
+
+==== CDB Tiling and LoD Rules for Structuring GeoPackages
+The following requirement references the CDB requirements for the rules for tiling the vector data in a GeoPackage and determination of the level of detail (LoD) in which the GeoPackage should be stored. Complete details the CDB tiling and LoD storage model are found in CDB Volume 1 and clause "CDB Concepts".
+
+include::requirements/REQ008.adoc[]
+
