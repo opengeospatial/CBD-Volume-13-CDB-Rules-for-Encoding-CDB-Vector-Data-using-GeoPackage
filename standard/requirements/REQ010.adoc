@@ -1,0 +1,8 @@
+[width="90%",cols="2,6"]
+|===
+|*Requirement 10* Tiled Vector Datasets  {set:cellbgcolor:#CACCCE}
+|http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core-tiled-vector-datasets +
+ +
+Any CDB structured GeoPackage that encodes vector features SHALL be compliant with CDB Core Tiled Vector Datasets Requirements 107 through 111 inclusive These requirements are documented in the CDB Core Requirements Class Tiled Vector Datasets (107-112).
+{set:cellbgcolor:#FFFFFF}
+|===
