@@ -55,3 +55,6 @@ Clause 3.6 - Tiled Data Sets specifies the requirements and provides detailed su
 include::requirements/REQ009.adoc[]
 
 ==== CDB GeoPackage Vector Datasets
+
+
+include::requirements/REQ009.adoc[]
