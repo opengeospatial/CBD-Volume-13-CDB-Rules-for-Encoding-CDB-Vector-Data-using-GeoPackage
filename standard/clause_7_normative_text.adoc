@@ -6,6 +6,10 @@ The following requirement clearly states that any given version has only one all
 
 include::requirements/REQ001.adoc[]
 
+There is a related CDB recommendation that a feature should not have two representations.
+
+<Insert recommendation include here. Page 230>
+
 === Requirement on geometry types and feature instances
 The following requirement clarifies the geometry types allowed for instances of feature data referenced to a tile. Essentially, all instances of a specific feature type (code?) SHALL be of the same geometry type.
 
@@ -56,5 +60,4 @@ include::requirements/REQ009.adoc[]
 
 ==== CDB GeoPackage Vector Datasets
 
-
-include::requirements/REQ009.adoc[]
+include::requirements/REQ0010.adoc[]
