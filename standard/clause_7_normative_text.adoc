@@ -60,4 +60,19 @@ include::requirements/REQ009.adoc[]
 
 ==== CDB GeoPackage Vector Datasets
 
+===== CDB Vector data general requirements
+This clause references requirements in section 5.7 Vector Datasets in the Volume 1 CDB Core Model Standard. The OGC suggests that clause 5.7 of the Core CDB standard be read in its entirety prior to developing capabilities to transform any non-CDB data source into a CDB structured GeoPackage that meets the mandatory requirements and would pass the CDB compliance tests.
+
+From Volume 1: _All of the information that is needed to instance features is organized in accordance to the CDB tile structure.  All the tiled Vector dataset files are located in the same directory. The dataset’s second component selector (CS2) is used to differentiate between files with the same extension or with the same Vector features._
+
+Further, the developer also needs to understand the feature coding system used in a CDB data store. From Volume 1: _The Vector dataset concept and the feature concepts overlap somewhat; some of the Vector datasets are generalizations or specializations of feature codes.  Section 1.5 CDB Data Dictionary provides a recommended mapping of the feature attributes across the CDB compliant datasets.  Note that the same feature should not have two representations._ More specifically, visit section 3.3.8.1 Feature Classification for more details. Basically, for the file path and naming requirements to be properly implemented, the correct feature codes need to be used. See http://schemas.opengis.net/cdb/1.1/Feature_Data_Dictionary.xml and http://schemas.opengis.net/cdb/1.1/Feature_Data_Dictionary.xsd for a complete list of feature codes. The .xml file is actually located in http://schemas.opengis.net/cdb/cdb-1_1_0.zip .
+
+The first set of tiled vector data requirements relates to coordinates for lights and the structure of vertex coordinates.
+
 include::requirements/REQ010.adoc[]
+
+===== CDB Attribution
+Attributes are used to describe one or more real or virtual characteristics of a feature.  Features can be assigned a variable number of attributes. The following requirements from the core document and related informative discussion in Volume 1 Core describe the CDB compliant usage of attributes in a CDB datastore.
+
+include::requirements/REQ011.adoc[]
+
