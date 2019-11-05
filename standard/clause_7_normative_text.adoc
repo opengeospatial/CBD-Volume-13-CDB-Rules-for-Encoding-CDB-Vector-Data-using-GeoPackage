@@ -60,4 +60,4 @@ include::requirements/REQ009.adoc[]
 
 ==== CDB GeoPackage Vector Datasets
 
-include::requirements/REQ0010.adoc[]
+include::requirements/REQ010.adoc[]
