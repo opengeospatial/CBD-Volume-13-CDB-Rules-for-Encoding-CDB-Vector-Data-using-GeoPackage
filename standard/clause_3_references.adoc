@@ -7,4 +7,4 @@ OGC: OGC 15-113r5, https://portal.opengeospatial.org/files/15-113r5[Volume 1: OG
 
 OGC: OGC 16-070r3, https://portal.opengeospatial.org/files/16-070r3[Volume 4: OGC CDB Best Practice use of Shapefiles for Vector Data Storage (2017)]
 
-OGC: OGC 12-128r15, https://portal.opengeospatial.org/files/12-128r15[OGC Geopackage Encoding Standard - with Corrigendum] (2018)
+OGC: OGC 12-128r15, https://portal.opengeospatial.org/files/12-128r15[OGC GeoPackage Encoding Standard - with Corrigendum] (2018)
