@@ -18,7 +18,7 @@ include::requirements/REQ002.adoc[]
 ==== Literal case including GeoPackage file names
 To ensure interoperability, file names and literal strings need to follow the case rules identified in both the CDB and GeoPackage Standards. The following requirement speciffies the literal case rules.
 
-include::requirements/REQ0012.adoc[]
+include::requirements/REQ012.adoc[]
 
 === GeoPackage Requirements
 This section defines the GeoPackage requirements that need to be considered when implementing a CDB compliant GeoPackage for use in a CDB data store. This section also provides any clarifications and/or profiles of those requirements.
@@ -80,4 +80,9 @@ include::requirements/REQ010.adoc[]
 Attributes are used to describe one or more real or virtual characteristics of a feature.  Features can be assigned a variable number of attributes. The following requirements from the core document and related informative discussion in Volume 1 Core describe the CDB compliant usage of attributes in a CDB datastore.
 
 include::requirements/REQ011.adoc[]
+
+===== Topology
+If the vector data layer is topologically structures, such as road networks, then the following requirement SHALL apply for structuring these data layers in a CDB GeoPackage container. Please reference 5.7.1.6	Handling of Topological Networks in Volume 1 for detailed information on this set of requirements.
+
+include::requirements/REQ013.adoc[]
 
