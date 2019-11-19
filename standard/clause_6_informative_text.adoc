@@ -46,8 +46,10 @@ The following table provides a summary of the GeoPackage geometry types in relat
 |MultiPoint with "m" column set| MultiPointM 
 |===
 
-=== Identifed Use Cases
-While previous work focused on the process and requirements for transforming CDB structured vector Shapefiles into GeoPackages, the identified use cases are apropos when defining how to store and access any other vector/geometry content regardless of encoding or format. However, vector data encodings and containers developed outside a CDB data transformation process would also require definition of additional requirements. For example, a GeoJSON encoding of feature data would require a transformation to "break" the GeoJSON file into the appropriate tile and LoD structure in order to be consistent with the CDB data store and structure requirements. The same would be true of vector data provided as none CDB structured Shapefiles, CityGML encodings, Oracle Spatial structured data, Esri GeoDataBase files and so on. 
+=== Some Identifed Use Cases for Shapefile to GeoPackage
+While previous work focused on the process and requirements for transforming CDB structured vector Shapefiles into GeoPackages, the identified use cases are apropos when defining how to store and access any other vector/geometry content regardless of encoding or format. This has to do with how the data are physically structured in a GeoPackage container.
+
+However, vector data encodings and containers developed outside a CDB data transformation process would also require definition of additional requirements. For example, a GeoJSON encoding of feature data would require a transformation to "break" the GeoJSON file into the appropriate tile and LoD structure in order to be consistent with the CDB data store and structure requirements. The same would be true of vector data provided as none CDB structured Shapefiles, CityGML encodings, Oracle Spatial structured data, Esri GeoDataBase files and so on. 
 
 Both the OGC OGC CDB - Leveraging GeoPackage Discussion Paper and the OGC CDB Vector Data in GeoPackage Interoperability Experiment Engineering Report focused on a constrained set of well defined use cases related to the current CDB structure and how to best use GeoPackage for resolving each of the use cases. As such, dealing with non-CDB structured vector content was not addressed. 
 
