@@ -1,4 +1,4 @@
-:Title: Optional CDB GeoPackage Extension
+:Title: Volume 13: OGC CDB Optional Extension for Structuring a CDB compliant GeoPackage (Normative).
 :titletext: {Title}
 :doctype: book
 :encoding: utf-8
@@ -15,9 +15,9 @@
 |===
 |{set:cellbgcolor:#FFFFFF}
 |[big]*Open Geospatial Consortium*
-|Submission Date: <yyyy-mm-dd>
-|Approval Date:   <yyyy-mm-dd>
-|Publication Date:   <yyyy-mm-dd>
+|Submission Date: <2020-mm-dd>
+|Approval Date:   <2020-mm-dd>
+|Publication Date:   <2020-mm-dd>
 |External identifier of this OGC(R) document: http://www.opengis.net/doc/IS/cdb-geopackage/1.2
 |Internal reference number of this OGC(R) document:    19-054
 |Version: 1.2
