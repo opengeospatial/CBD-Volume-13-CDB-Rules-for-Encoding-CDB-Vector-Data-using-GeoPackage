@@ -1,0 +1,8 @@
+[width="90%",cols="2,6"]
+|===
+|*Requirement 13* Tiled Vector Topological Networks  {set:cellbgcolor:#CACCCE}
+|http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-gpkg-topology +
+ +
+Any CDB structured GeoPackage that encodes topologically structured vector data layers, such as roads, railroads, or hydrology, _SHALL_ implement CDB Requirements 117 through 119 inclusive.
+{set:cellbgcolor:#FFFFFF}
+|===

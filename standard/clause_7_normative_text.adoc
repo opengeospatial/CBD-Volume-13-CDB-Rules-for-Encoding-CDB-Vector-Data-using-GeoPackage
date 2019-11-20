@@ -1,19 +1,24 @@
 == Requirements for Using GeoPackages in a CDB Data Store
 This section documents the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are _by reference_ to specific requirements in both the GeoPackage and CDB standards. The referenced requirements are known as _dependent_ requirements. For example, the GeoPackage standrds specifies that any valid GeoPackage shall have a file extension of .gpkg. The optional CDB GeoPackage extension specifies the same requirement.
 
-=== Requirement that one and only vector format can be in a CDB version
+=== General requirements
+
+==== Requirement that one and only vector format can be in a CDB version
 The following requirement clearly states that any given version has only one allowed vector format. Currently, the two supported formats are the traditional Shapefiles and now GeoPackages. However, a CDB data store may have multiple versions. Therefore, the Shapefile format could be used in one version and GeoPackages used in another version.
 
 include::requirements/REQ001.adoc[]
 
-There is a related CDB recommendation that a feature should not have two representations.
+There is a related CDB recommendation that a feature should not have two representations. This means that a feature should not be a point at one LoD and an polygon in another LoD.
 
-<Insert recommendation include here. Page 230>
-
-=== Requirement on geometry types and feature instances
+==== Requirement on geometry types and feature instances
 The following requirement clarifies the geometry types allowed for instances of feature data referenced to a tile. Essentially, all instances of a specific feature type (code?) SHALL be of the same geometry type.
 
 include::requirements/REQ002.adoc[]
+
+==== Literal case including GeoPackage file names
+To ensure interoperability, file names and literal strings need to follow the case rules identified in both the CDB and GeoPackage Standards. The following requirement speciffies the literal case rules.
+
+include::requirements/REQ012.adoc[]
 
 === GeoPackage Requirements
 This section defines the GeoPackage requirements that need to be considered when implementing a CDB compliant GeoPackage for use in a CDB data store. This section also provides any clarifications and/or profiles of those requirements.
@@ -75,4 +80,9 @@ include::requirements/REQ010.adoc[]
 Attributes are used to describe one or more real or virtual characteristics of a feature.  Features can be assigned a variable number of attributes. The following requirements from the core document and related informative discussion in Volume 1 Core describe the CDB compliant usage of attributes in a CDB datastore.
 
 include::requirements/REQ011.adoc[]
+
+===== Topology
+If the vector data layer is topologically structures, such as road networks, then the following requirement SHALL apply for structuring these data layers in a CDB GeoPackage container. Please reference 5.7.1.6	Handling of Topological Networks in Volume 1 for detailed information on this set of requirements.
+
+include::requirements/REQ013.adoc[]
 
