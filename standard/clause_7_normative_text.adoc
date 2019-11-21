@@ -79,6 +79,8 @@ include::requirements/REQ010.adoc[]
 ===== CDB Attribution
 Attributes are used to describe one or more real or virtual characteristics of a feature.  Features can be assigned a variable number of attributes. The following requirements from the core document and related informative discussion in Volume 1 Core describe the CDB compliant usage of attributes in a CDB datastore.
 
+Important Note: Each attribute is uniquely defined by an attribute identifier. In database terminoly this would be a column name or heading in a database table. This attribute identifier is a “case-sensitive” character string of 10 characters or less. Further, the 10 character must be a unique literal string so that all columns in a table have unique names.
+
 include::requirements/REQ011.adoc[]
 
 ===== Topology
