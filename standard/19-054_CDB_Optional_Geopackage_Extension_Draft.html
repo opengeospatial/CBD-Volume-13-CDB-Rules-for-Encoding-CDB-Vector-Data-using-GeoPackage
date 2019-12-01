@@ -564,83 +564,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="small">Except as contained in this notice, the name of LICENSOR or of any other holder of a copyright in all or part of the Intellectual Property shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Intellectual Property without prior written authorization of LICENSOR or such copyright holder. LICENSOR is and shall at all times be the sole entity that may authorize you or any third party to use certification marks, trademarks or other special designations to indicate compliance with any LICENSOR standards or specifications. This Agreement is governed by the laws of the Commonwealth of Massachusetts. The application to this Agreement of the United Nations Convention on Contracts for the International Sale of Goods is hereby expressly excluded. In the event any provision of this Agreement shall be deemed unenforceable, void or invalid, such provision shall be modified so as to make it valid and enforceable, and as so modified the entire Agreement shall remain in full force and effect. No decision, action or inaction by LICENSOR shall be construed to be a waiver of any rights or remedies available to it.</span></p>
 </div>
 <div style="page-break-after: always;"></div>
-<div id="toc" class="toc">
-<div id="toctitle" class="title">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#_scope">1. Scope</a></li>
-<li><a href="#_conformance">2. Conformance</a></li>
-<li><a href="#_references">3. References</a></li>
-<li><a href="#_terms_and_definitions">4. Terms and Definitions</a>
-<ul class="sectlevel2">
-<li><a href="#_coordinate_reference_system">4.1. <strong>coordinate reference system</strong></a></li>
-<li><a href="#_coordinate_system">4.2. <strong>coordinate system</strong></a></li>
-<li><a href="#_dataset">4.3. <strong>dataset</strong></a></li>
-<li><a href="#_feature">4.4. <strong>feature</strong></a></li>
-<li><a href="#_feature_collection_collection">4.5. <strong>feature collection; collection</strong></a></li>
-<li><a href="#_height">4.6. <strong>Height</strong></a></li>
-<li><a href="#_linestring">4.7. <strong>linestring</strong></a></li>
-<li><a href="#_point">4.8. <strong>point</strong></a></li>
-<li><a href="#_polygon">4.9. <strong>polygon</strong></a></li>
-<li><a href="#_geopackage_file">4.10. <strong>GeoPackage file</strong></a></li>
-<li><a href="#_tile">4.11. <strong>tile</strong></a></li>
-<li><a href="#_valid_geopackage">4.12. <strong>Valid GeoPackage</strong></a></li>
-<li><a href="#_vector_and_vector_data">4.13. <strong>vector and vector data</strong></a></li>
-<li><a href="#_vector_geometry">4.14. <strong>vector geometry</strong></a></li>
-<li><a href="#_version">4.15. <strong>Version</strong></a></li>
-</ul>
-</li>
-<li><a href="#_abbreviations">5. Abbreviations</a></li>
-<li><a href="#_conventions">6. Conventions</a>
-<ul class="sectlevel2">
-<li><a href="#_identifiers">6.1. Identifiers</a></li>
-</ul>
-</li>
-<li><a href="#_informative">7. Informative</a>
-<ul class="sectlevel2">
-<li><a href="#_what_is_a_geopackage">7.1. What is a GeoPackage?</a></li>
-<li><a href="#_what_is_cdb_or_a_cdb">7.2. What is CDB (or a CDB)?</a></li>
-<li><a href="#_why_use_geopackages_in_a_cdb">7.3. Why use GeoPackages in a CDB?</a></li>
-<li><a href="#_geometry_and_geometry_types">7.4. Geometry and Geometry Types</a></li>
-<li><a href="#_identifed_use_cases">7.5. Identifed Use Cases</a></li>
-</ul>
-</li>
-<li><a href="#_requirements_for_using_geopackages_in_a_cdb_data_store">8. Requirements for Using GeoPackages in a CDB Data Store</a>
-<ul class="sectlevel2">
-<li><a href="#_requirement_that_one_and_only_vector_format_can_be_in_a_cdb_version">8.1. Requirement that one and only vector format can be in a CDB version</a></li>
-<li><a href="#_requirement_on_geometry_types_and_feature_instances">8.2. Requirement on geometry types and feature instances</a></li>
-<li><a href="#_geopackage_requirements">8.3. GeoPackage Requirements</a>
-<ul class="sectlevel3">
-<li><a href="#_geopackage_requirements_core">8.3.1. GeoPackage Requirements - core</a></li>
-<li><a href="#_geopackage_requirements_constrained_by_cdb_crs_profile">8.3.2. GeoPackage Requirements constrained by CDB - CRS Profile</a></li>
-<li><a href="#_geopackage_requirements_options_features">8.3.3. GeoPackage Requirements Options - Features</a></li>
-<li><a href="#_requirement_cdb_core_need_to_discuss_this_one_could_be_changed_to_a_backend_process_and_not_a_client">8.3.4. Requirement CDB Core - Need to discuss this one. Could be changed to a backend process and not a client.</a></li>
-</ul>
-</li>
-<li><a href="#_cdb_requirements_for_a_cdb_compliant_geopackage_vector_encoding">8.4. CDB Requirements for a CDB compliant GeoPackage Vector encoding</a>
-<ul class="sectlevel3">
-<li><a href="#_cdb_vector_data_core_requirements">8.4.1. CDB Vector Data Core Requirements</a></li>
-<li><a href="#_cdb_tiling_and_lod_rules_for_structuring_geopackages">8.4.2. CDB Tiling and LoD Rules for Structuring GeoPackages</a></li>
-<li><a href="#_geopackage_in_cdb_tiled_vector_data_sets">8.4.3. GeoPackage in CDB - Tiled Vector Data Sets</a></li>
-<li><a href="#_cdb_geopackage_vector_datasets">8.4.4. CDB GeoPackage Vector Datasets</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_conformance_class_abstract_test_suite_normative">Annex A: Conformance Class Abstract Test Suite (Normative)</a>
-<ul class="sectlevel2">
-<li><a href="#_conformance_class_a">A.1. Conformance Class A</a>
-<ul class="sectlevel3">
-<li><a href="#_requirement_1">A.1.1. Requirement 1</a></li>
-<li><a href="#_requirement_2">A.1.2. Requirement 2</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_geopackage_and_shapefile_geometry_types_cross_walk">Annex B: GeoPackage and Shapefile Geometry types cross walk.</a></li>
-<li><a href="#_revision_history">Annex C: Revision History</a></li>
-<li><a href="#Bibliography">Annex D: Bibliography</a></li>
-</ul>
-</div>
+<!-- toc disabled -->
 <div style="page-break-after: always;"></div>
 <div class="paragraph">
 <p><strong class="big">i.     Abstract</strong></p>
@@ -698,6 +622,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li>
 <p>FlightSafety Visual Systems</p>
 </li>
+<li>
+<p>CAE Inc.</p>
+</li>
 </ul>
 </div>
 <div class="paragraph">
@@ -721,301 +648,105 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Ryan Franz</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">FlightSafety Visual Systems</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_scope"><a class="anchor" href="#_scope"></a>1. Scope</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This optional OGC CDB Extension defines the behavior and requirements for encoding vector data in a GeoPackage container for use in a CDB data store. The requirements and related guidance are grounded in the existing CDB Core requirements and the GeoPackage core requirements for vector data. As such, any GeoPackage that is to be referenced/used in a CDB data store must be 1.) compliant with the CDB core requirements for vector data and 2.) compliant with the GeoPackage core requirements for encoding vector data. Please note that some of the core GeoPackage requirements are profiled in order to be consistent with the CDB core requirements as specified in <a href="https://portal.opengeospatial.org/files/15-113r5">Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure</a>. Further, there are associated normative additions to the CDB Core to accommodate not just the use of GeoPackages but also other vector storage encodings/containers.</p>
-</div>
-<div class="paragraph">
-<p>Before reading this standard, please remember that the idea is to restrict the encoding of a dataset to a single vector format per CDB Version. Since a “CDB” is made of one or more “Versions” (as specified by Configuration.xml), and that each CDB Version can have a different encoding for a given dataset, the result is that a “CDB” may pretty well exist with multiple encodings for the same dataset. This means that if you wish to use GeoPackage containers, you need to create a version that will just contain GeoPackages of the vector data and not include any Shapefiles.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_conformance"><a class="anchor" href="#_conformance"></a>2. Conformance</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This standard defines <a href="#TBD">[TBD]</a> requirements / conformance classes.</p>
-</div>
-<div class="paragraph">
-<p>The standardization targets of all conformance classes are "GeoPackages in CDB Data Store".</p>
-</div>
-<div class="paragraph">
-<p>The main requirements class is:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Core. &lt;&lt;Add link to Annex A later&gt;&gt;</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The Core specifies requirements that all GeoPackages that are to be stored in a CDB store that shall be implemented.</p>
-</div>
-<div class="paragraph">
-<p>Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.</p>
-</div>
-<div class="paragraph">
-<p>In order to conform to this OGC® interface standard, a software implementation shall choose to implement the conformance levels specified in Annex A (normative)</p>
-</div>
-<div class="paragraph">
-<p>All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_references"><a class="anchor" href="#_references"></a>3. References</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.</p>
-</div>
-<div class="paragraph">
-<p>ISO / TC 211: ISO 19115-1:2014 Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;Part 1: Fundamentals (2014)</p>
-</div>
-<div class="paragraph">
-<p>OGC: OGC 15-113r5, <a href="https://portal.opengeospatial.org/files/15-113r5">Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure (2017)</a></p>
-</div>
-<div class="paragraph">
-<p>OGC: OGC 16-070r3, <a href="https://portal.opengeospatial.org/files/16-070r3">Volume 4: OGC CDB Best Practice use of Shapefiles for Vector Data Storage (2017)</a></p>
-</div>
-<div class="paragraph">
-<p>OGC: OGC 12-128r15, <a href="https://portal.opengeospatial.org/files/12-128r15">OGC Geopackage Encoding Standard - with Corrigendum</a> (2018)</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_terms_and_definitions"><a class="anchor" href="#_terms_and_definitions"></a>4. Terms and Definitions</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This document uses the terms defined in Sub-clause 5.3 of [OGC 06-121r8], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.</p>
-</div>
-<div class="paragraph">
-<p>For the purposes of this document, the following additional terms and definitions apply.</p>
-</div>
-<div class="sect2">
-<h3 id="_coordinate_reference_system"><a class="anchor" href="#_coordinate_reference_system"></a>4.1. <strong>coordinate reference system</strong></h3>
-<div class="paragraph">
-<p>coordinate system that is related to the real world by a datum [ISO 19111]</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_coordinate_system"><a class="anchor" href="#_coordinate_system"></a>4.2. <strong>coordinate system</strong></h3>
-<div class="paragraph">
-<p>set of mathematical rules for specifying how coordinates are to be assigned to points [ISO 19111]</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_dataset"><a class="anchor" href="#_dataset"></a>4.3. <strong>dataset</strong></h3>
-<div class="paragraph">
-<p>collection of data, published or curated by a single agent, and available for access or download in one or more formats <a href="#DCAT">[DCAT]</a></p>
-</div>
-<div class="admonitionblock note">
-<table>
 <tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-The use of 'collection' in the definition from <a href="#DCAT">[DCAT]</a> is broader than
-the use of the term collection in this standard. See the definition of feature collection.
-</td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">David Graham</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">CAE Inc.</p></td>
 </tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_feature"><a class="anchor" href="#_feature"></a>4.4. <strong>feature</strong></h3>
-<div class="paragraph">
-<p>abstraction of real world phenomena [ISO 19101-1:2014]</p>
-</div>
-<div class="admonitionblock note">
-<table>
 <tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-If you are unfamiliar with the term 'feature', the explanations on <a href="https://www.w3.org/TR/sdw-bp/#spatial-things-features-and-geometry">Spatial Things, Features and Geometry</a> in the <a href="#SDWBP">W3C/OGC Spatial Data on the Web Best Practice document</a> provide more detail.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_feature_collection_collection"><a class="anchor" href="#_feature_collection_collection"></a>4.5. <strong>feature collection; collection</strong></h3>
-<div class="paragraph">
-<p>a set of <strong>features</strong> from a <strong>dataset</strong></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-In this standard, 'collection' is used as a synonym for 'feature
-collection'. This is done to make this document easier to understand for those that are not geo-experts.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_height"><a class="anchor" href="#_height"></a>4.6. <strong>Height</strong></h3>
-<div class="paragraph">
-<p>Distance of a point from a chosen reference surface measured upward along a line perpendicular to that surface. [ISO 19111] Note 1 to entry: A height below the reference surface will have a negative value, which would embrace both gravity-related heights and ellipsoidal heights.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_linestring"><a class="anchor" href="#_linestring"></a>4.7. <strong>linestring</strong></h3>
-<div class="paragraph">
-<p>curve composed of straight-line segments (aka line) [ISO 19136:2007]</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_point"><a class="anchor" href="#_point"></a>4.8. <strong>point</strong></h3>
-<div class="paragraph">
-<p>0-dimensional geometric primitive, representing a position [ISO 19136:2007]</p>
-</div>
-<div class="paragraph">
-<p>Note to entry: The boundary of a point is the empty set.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_polygon"><a class="anchor" href="#_polygon"></a>4.9. <strong>polygon</strong></h3>
-<div class="paragraph">
-<p>planar surface defined by 1 exterior boundary and 0 or more interior boundaries [ISO 19136:2007]</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_geopackage_file"><a class="anchor" href="#_geopackage_file"></a>4.10. <strong>GeoPackage file</strong></h3>
-<div class="paragraph">
-<p>a platform-independent SQLite database file that contains GeoPackage data and metadata tables with specified definitions, integrity assertions, format limitations and content constraints.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_tile"><a class="anchor" href="#_tile"></a>4.11. <strong>tile</strong></h3>
-<div class="paragraph">
-<p>a geometric shape with known properties that is the result of the tiling (tessellation) of a plane. A tile consists of a single connected "piece" without "holes" or "lines" (topological disc).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_valid_geopackage"><a class="anchor" href="#_valid_geopackage"></a>4.12. <strong>Valid GeoPackage</strong></h3>
-<div class="paragraph">
-<p>A GeoPackage that contains features per clause Features and/or tiles per clause Tiles and row(s) in the gpkg_contents table with data_type column values of "features" and/or "tiles" describing the user data tables.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_vector_and_vector_data"><a class="anchor" href="#_vector_and_vector_data"></a>4.13. <strong>vector and vector data</strong></h3>
-<div class="paragraph">
-<p>quantity having direction as well as magnitude</p>
-</div>
-<div class="paragraph">
-<p>Note to entry: A directed line segment represents a vector if the length and direction of the line segment are equal to the magnitude and direction of the vector. The term vector data refers to data that represents the spatial configuration of features as a set of directed line segments. [ISO 19123:2005]</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_vector_geometry"><a class="anchor" href="#_vector_geometry"></a>4.14. <strong>vector geometry</strong></h3>
-<div class="paragraph">
-<p>representation of geometry through the use of constructive geometric primitives [ISO 19107:2003]</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_version"><a class="anchor" href="#_version"></a>4.15. <strong>Version</strong></h3>
-<div class="paragraph">
-<p>A collection of pure CDB Datasets and/or user-defined datasets. Please see section 3.2 of Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure for details on the CDB versioning strategy and structure.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_abbreviations"><a class="anchor" href="#_abbreviations"></a>5. Abbreviations</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_conventions"><a class="anchor" href="#_conventions"></a>6. Conventions</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
-</div>
-<div class="sect2">
-<h3 id="_identifiers"><a class="anchor" href="#_identifiers"></a>6.1. Identifiers</h3>
-<div class="paragraph">
-<p>Identifiers</p>
-</div>
-<div class="paragraph">
-<p>The normative provisions in this standard are denoted by the URI <a href="http://www.opengis.net/spec/cdb-vector-geopackage/1.2" class="bare">http://www.opengis.net/spec/cdb-vector-geopackage/1.2</a></p>
-</div>
-<div class="paragraph">
-<p>All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_informative"><a class="anchor" href="#_informative"></a>7. Informative</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This section provides information for understanding the role of using GeoPackage containers to encode vector data in a CDB data store. One key and overriding requirement to consider when implementing this CDB extension is that the structure if the content of the vector data in GeoPackage is also dictated by the core requirements in the CDB Standard. Examples would be for restrictions on the coordinate reference system (CRS) allowed and the size (extents) of the tiles.</p>
-</div>
-<div class="sect2">
-<h3 id="_what_is_a_geopackage"><a class="anchor" href="#_what_is_a_geopackage"></a>7.1. What is a GeoPackage?</h3>
-<div class="paragraph">
-<p>A GeoPackage is the SQLite container and the OGC GeoPackage Encoding Standard governs the rules and requirements of content stored in a GeoPackage container. The GeoPackage Standard defines the schema for a GeoPackage, including table definitions, integrity assertions, format limitations, and content constraints. The required and supported content of a GeoPackage is entirely defined in the standard.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_what_is_cdb_or_a_cdb"><a class="anchor" href="#_what_is_cdb_or_a_cdb"></a>7.2. What is CDB (or a CDB)?</h3>
-<div class="paragraph">
-<p>CDB is an open standard defining physical, logical, and conceptual models for a single,
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">== Scope</p>
+<p class="tableblock">This optional OGC CDB Extension defines the behavior and requirements for encoding vector data in a GeoPackage container for use in a CDB data store. The requirements and related guidance are grounded in the existing CDB Core requirements and the GeoPackage core requirements for vector data. As such, any GeoPackage that is to be referenced/used in a CDB data store must be 1.) compliant with the CDB core requirements for vector data and 2.) compliant with the GeoPackage core requirements for encoding vector data. Please note that some of the core GeoPackage requirements are profiled in order to be consistent with the CDB core requirements as specified in <a href="https://portal.opengeospatial.org/files/15-113r5">Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure</a>. Further, there are associated normative additions to the CDB Core to accommodate not just the use of GeoPackages but also other vector storage encodings/containers.</p>
+<p class="tableblock">Before reading this standard, please remember that the idea is to restrict the encoding of a dataset to a single vector format per CDB Version. Since a “CDB” is made of one or more “Versions” (as specified by Configuration.xml), and that each CDB Version can have a different encoding for a given dataset, the result is that a “CDB” may pretty well exist with multiple encodings for the same dataset. This means that if you wish to use GeoPackage containers, you need to create a version that will just contain GeoPackages of the vector data and not include any Shapefiles.</p>
+<p class="tableblock">== Conformance</p>
+<p class="tableblock">This standard defines <a href="#TBD">[TBD]</a> requirements / conformance classes.</p>
+<p class="tableblock">The standardization targets of all conformance classes are "GeoPackages in CDB Data Store".</p>
+<p class="tableblock">The main requirements class is:</p>
+<p class="tableblock">    Core. <a href="#Add link to Annex A later">[Add link to Annex A later]</a></p>
+<p class="tableblock">The Core specifies requirements that shall be implemented for all GeoPackages that are to be stored in a CDB store.</p>
+<p class="tableblock">Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.</p>
+<p class="tableblock">In order to conform to this OGC® interface standard, a software implementation shall choose to implement the conformance levels specified in Annex A (normative)</p>
+<p class="tableblock">All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.</p>
+<p class="tableblock">== References
+The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.</p>
+<p class="tableblock">ISO / TC 211: ISO 19115-1:2014 Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;Part 1: Fundamentals (2014)</p>
+<p class="tableblock">OGC: OGC 15-113r5, <a href="https://portal.opengeospatial.org/files/15-113r5">Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure (2017)</a></p>
+<p class="tableblock">OGC: OGC 16-070r3, <a href="https://portal.opengeospatial.org/files/16-070r3">Volume 4: OGC CDB Best Practice use of Shapefiles for Vector Data Storage (2017)</a></p>
+<p class="tableblock">OGC: OGC 12-128r15, <a href="https://portal.opengeospatial.org/files/12-128r15">OGC Geopackage Encoding Standard - with Corrigendum</a> (2018)</p>
+<p class="tableblock">== Terms and Definitions
+This document uses the terms defined in Sub-clause 5.3 of [OGC 06-121r8], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.</p>
+<p class="tableblock">For the purposes of this document, the following additional terms and definitions apply.</p>
+<p class="tableblock">=== <strong>coordinate reference system</strong>
+coordinate system that is related to the real world by a datum [ISO 19111]</p>
+<p class="tableblock">=== <strong>coordinate system</strong>
+set of mathematical rules for specifying how coordinates are to be assigned to points [ISO 19111]</p>
+<p class="tableblock">=== <strong>dataset</strong>
+collection of data, published or curated by a single agent, and available for access or download in one or more formats <a href="#DCAT">[DCAT]</a></p>
+<p class="tableblock">NOTE: The use of 'collection' in the definition from <a href="#DCAT">[DCAT]</a> is broader than
+the use of the term collection in this standard. See the definition of feature collection.</p>
+<p class="tableblock">=== <strong>feature</strong>
+abstraction of real world phenomena [ISO 19101-1:2014]</p>
+<p class="tableblock">NOTE: If you are unfamiliar with the term 'feature', the explanations on <a href="https://www.w3.org/TR/sdw-bp/#spatial-things-features-and-geometry">Spatial Things, Features and Geometry</a> in the <a href="#SDWBP">W3C/OGC Spatial Data on the Web Best Practice document</a> provide more detail.</p>
+<p class="tableblock">=== <strong>feature collection; collection</strong>
+a set of <strong>features</strong> from a <strong>dataset</strong></p>
+<p class="tableblock">NOTE: In this standard, 'collection' is used as a synonym for 'feature
+collection'. This is done to make this document easier to understand for those that are not geo-experts.</p>
+<p class="tableblock">=== <strong>Height</strong>
+Distance of a point from a chosen reference surface measured upward along a line perpendicular to that surface. [ISO 19111] Note 1 to entry: A height below the reference surface will have a negative value, which would embrace both gravity-related heights and ellipsoidal heights.</p>
+<p class="tableblock">=== <strong>linestring</strong>
+curve composed of straight-line segments (aka line) [ISO 19136:2007]</p>
+<p class="tableblock">=== <strong>point</strong>
+0-dimensional geometric primitive, representing a position [ISO 19136:2007]</p>
+<p class="tableblock">Note to entry: The boundary of a point is the empty set.</p>
+<p class="tableblock">=== <strong>polygon</strong>
+planar surface defined by 1 exterior boundary and 0 or more interior boundaries [ISO 19136:2007]</p>
+<p class="tableblock">=== <strong>GeoPackage file</strong>
+a platform-independent SQLite database file that contains GeoPackage data and metadata tables with specified definitions, integrity assertions, format limitations and content constraints.</p>
+<p class="tableblock">=== <strong>tile</strong>
+a geometric shape with known properties that is the result of the tiling (tessellation) of a plane. A tile consists of a single connected "piece" without "holes" or "lines" (topological disc).</p>
+<p class="tableblock">=== <strong>Valid GeoPackage</strong></p>
+<p class="tableblock">A GeoPackage that contains features per clause Features and/or tiles per clause Tiles and row(s) in the gpkg_contents table with data_type column values of "features" and/or "tiles" describing the user data tables.</p>
+<p class="tableblock">=== <strong>vector and vector data</strong></p>
+<p class="tableblock">quantity having direction as well as magnitude</p>
+<p class="tableblock">Note to entry: A directed line segment represents a vector if the length and direction of the line segment are equal to the magnitude and direction of the vector. The term vector data refers to data that represents the spatial configuration of features as a set of directed line segments. [ISO 19123:2005]</p>
+<p class="tableblock">=== <strong>vector geometry</strong></p>
+<p class="tableblock">representation of geometry through the use of constructive geometric primitives [ISO 19107:2003]</p>
+<p class="tableblock">=== <strong>Version</strong></p>
+<p class="tableblock">A collection of pure CDB Datasets and/or user-defined datasets. Please see section 3.2 of Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure for details on the CDB versioning strategy and structure.</p>
+<p class="tableblock">== Abbreviations</p>
+<p class="tableblock">== Conventions
+This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+<p class="tableblock">=== Identifiers
+Identifiers</p>
+<p class="tableblock">The normative provisions in this standard are denoted by the URI <a href="http://www.opengis.net/spec/cdb-vector-geopackage/1.2" class="bare">http://www.opengis.net/spec/cdb-vector-geopackage/1.2</a></p>
+<p class="tableblock">All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.</p>
+<p class="tableblock">== Informative</p>
+<p class="tableblock">This section provides information for understanding the role of using GeoPackage containers to encode vector data in a CDB data store. One key and overriding requirement to consider when implementing this CDB extension is that the structure if the content of the vector data in GeoPackage is also dictated by the core requirements in the CDB Standard. Examples would be for restrictions on the coordinate reference system (CRS) allowed and the size (extents) of the tiles.</p>
+<p class="tableblock">=== What is a GeoPackage?</p>
+<p class="tableblock">A GeoPackage is the SQLite container and the OGC GeoPackage Encoding Standard governs the rules and requirements of content stored in a GeoPackage container. The GeoPackage Standard defines the schema for a GeoPackage, including table definitions, integrity assertions, format limitations, and content constraints. The required and supported content of a GeoPackage is entirely defined in the standard.</p>
+<p class="tableblock">=== What is CDB (or a CDB)?</p>
+<p class="tableblock">CDB is an open standard defining physical, logical, and conceptual models for a single,
 “versionable,” virtual representation of the earth. CDB structured data stores provide for
 a geospatial content and model definition repository that is plug-and-play interoperable
 between database authoring workstations. Moreover, a CDB structured data store can be
 used as a common online (or runtime) repository from which various simulator client devices
 can simultaneously retrieve and modify, in real-time, relevant information to
 perform their respective runtime simulation tasks (OGC CDB Standard, 2018).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_why_use_geopackages_in_a_cdb"><a class="anchor" href="#_why_use_geopackages_in_a_cdb"></a>7.3. Why use GeoPackages in a CDB?</h3>
-<div class="paragraph">
-<p>The geometries supported by the GeoPackage standard are consistent with the OGC Simple Feature Standard. A GeoPackage
+<p class="tableblock">=== Why use GeoPackages in a CDB?</p>
+<p class="tableblock">The geometries supported by the GeoPackage standard are consistent with the OGC Simple Feature Standard. A GeoPackage
 is capable of storing feature geometries as Points, LineStrings, Polygons, MultiPoints, MultiLineStrings, MultiPolygons, and GeomCollection. A strength of the GeoPackage is the portability and utility in non-traditional simulation environments,
 such as hand-held tactical devices. These strengths and the self describing nature of a GeoPackage created demand not just in the traditional modelling and simulation community but also other domains for having the ability to use GeoPackages in a CDB data store.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_geometry_and_geometry_types"><a class="anchor" href="#_geometry_and_geometry_types"></a>7.4. Geometry and Geometry Types</h3>
-<div class="paragraph">
-<p>When working with vector feature data, one of the properties is the feature&#8217;s geometry. A geometry is an ordered sequence of vertices that are connected by straight line segments or circular arcs. The semantics of the geometry are determined by its type. The GeoPackage core supports six geometry types. Other types may be used but their definition and use requires development of a GeoPackage extension. The GeoPackage in CDB standard is based on the core geometry types and does not require any extensions to support additional geometries.</p>
-</div>
-<div class="paragraph">
-<p>Further, the GeoPackage standard allows the additional specification of "Z" values and "M" values. Z values may be thought of as "elevation". However, the use of "elevation" is inexact. Instead this standard uses the term <em>height</em> to define the semantics of the Z values. "M" stands for <em>measurement</em>. Measurements could be such properties as "temperature" or "reflectance". Whether Z and or M values are part of a given GeoPackage is determined by what values are set for the <em>z</em> and <em>m</em> columns in the GeoPackage Geometry Columns Table Definition. These are optional values.</p>
-</div>
-<div class="paragraph">
-<p>Geometries are stored as binary blobs in a GeoPackage. Please read GeoPackage clause 2.1.3. Geometry Encoding carefully. This clause defines the binary encoding used and references OGC/ISO Well Known Binary Types (WKB)  OGC WKB simple feature geometry types specified in <a href="http://portal.opengeospatial.org/files/?artifact_id=25355">OGC 06-103r4</a> are a subset of the ISO WKB geometry types. WKB geometry types are are restricted to 0, 1 and 2-dimensional geometric objects that exist in 2, 3 or 4-dimensional coordinate space. They are not geographic or geodesic geometry types. The axis order in WKB is always (x,y{,z}{,m}) where x is easting or longitude, y is northing or latitude, z is optional elevation and m is optional measure.</p>
-</div>
-<div class="paragraph">
-<p>The following table provides a summary of the GeoPackage geometry types in relation to Shapefile geometries. As can be seen, the GeoPackage core set of geometry types is 100 percent compatible with the Shapefile geometry types.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><strong>GeoPackage Geometry Type</strong></th>
-<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><strong>Shapefile Vector Type</strong></th>
+<p class="tableblock">=== Geometry and Geometry Types
+When working with vector feature data, one of the properties is the feature&#8217;s geometry. A geometry is an ordered sequence of vertices that are connected by straight line segments or circular arcs. The semantics of the geometry are determined by its type. The GeoPackage core supports six geometry types. Other types may be used but their definition and use requires development of a GeoPackage extension. The GeoPackage in CDB standard is based on the core geometry types and does not require any extensions to support additional geometries.</p>
+<p class="tableblock">Further, the GeoPackage standard allows the additional specification of "Z" values and "M" values. Z values may be thought of as "elevation". However, the use of "elevation" is inexact. Instead this standard uses the term <em>height</em> to define the semantics of the Z values. "M" stands for <em>measurement</em>. Measurements could be such properties as "temperature" or "reflectance". Whether Z and or M values are part of a given GeoPackage is determined by what values are set for the <em>z</em> and <em>m</em> columns in the GeoPackage Geometry Columns Table Definition. These are optional values.</p>
+<p class="tableblock">Geometries are stored as binary blobs in a GeoPackage. Please read GeoPackage clause 2.1.3. Geometry Encoding carefully. This clause defines the binary encoding used and references OGC/ISO Well Known Binary Types (WKB)  OGC WKB simple feature geometry types specified in <a href="http://portal.opengeospatial.org/files/?artifact_id=25355">OGC 06-103r4</a> are a subset of the ISO WKB geometry types. WKB geometry types are are restricted to 0, 1 and 2-dimensional geometric objects that exist in 2, 3 or 4-dimensional coordinate space. They are not geographic or geodesic geometry types. The axis order in WKB is always (x,y{,z}{,m}) where x is easting or longitude, y is northing or latitude, z is optional elevation and m is optional measure.</p>
+<p class="tableblock">The following table provides a summary of the GeoPackage geometry types in relation to Shapefile geometries. As can be seen, the GeoPackage core set of geometry types is 100 percent compatible with the Shapefile geometry types.</p>
+<p class="tableblock">[options="header",]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
 </tr>
-</thead>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>GeoPackage Geometry Type</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Shapefile Vector Type</strong></p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Point</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Point</p></td>
@@ -1056,136 +787,69 @@ such as hand-held tactical devices. These strengths and the self describing natu
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MultiPoint with "m" column set</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MultiPointM</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_identifed_use_cases"><a class="anchor" href="#_identifed_use_cases"></a>7.5. Identifed Use Cases</h3>
-<div class="paragraph">
-<p>While previous work focused on the process and requirements for transforming CDB structured vector Shapefiles into GeoPackages, the identified use cases are apropos when defining how to store and access any other vector/geometry content regardless of encoding or format. However, vector data encodings and containers developed outside a CDB data transformation process would also require definition of additional requirements. For example, a GeoJSON encoding of feature data would require a transformation to "break" the GeoJSON file into the appropriate tile and LoD structure in order to be consistent with the CDB data store and structure requirements. The same would be true of vector data provided as none CDB structured Shapefiles, CityGML encodings, Oracle Spatial structured data, Esri GeoDataBase files and so on.</p>
-</div>
-<div class="paragraph">
-<p>Both the OGC OGC CDB - Leveraging GeoPackage Discussion Paper and the OGC CDB Vector Data in GeoPackage Interoperability Experiment Engineering Report focused on a constrained set of well defined use cases related to the current CDB structure and how to best use GeoPackage for resolving each of the use cases. As such, dealing with non-CDB structured vector content was not addressed.</p>
-</div>
-<div class="paragraph">
-<p>The four initial use cases identified in the OGC Discussion Paper are:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Replace each Shapefile with a GeoPackage: The easiest way to integrate a GeoPackage container into a CDB data store is to replace each Shapefile in a CDB data store with a GeoPackage.</p>
-</li>
-<li>
-<p>Make each CDB tile a layer in a single GeoPackage: Constructing each vector tile within CDB as a table within a GeoPackage for a given CDB dataset is a straightforward approach to utilize GeoPackage capabilities and significantly reduce file counts in a CDB (note that in GeoPackage a table is known as a layer).</p>
-</li>
-<li>
-<p>Store each CDB LOD as a layer in GeoPackage: Design approach #3 incorporates the lessons learn from experimentation with approach #2 to limit the number of tables within a GeoPackage and reduce the number of files in a CDB.</p>
-</li>
-<li>
-<p>Store each CDB Geocell as a layer in GeoPackage:  Design approach #4 extends design approach #3 to have a single GeoPackage per geotile of CDB. In this approach, the tables in the GeoPackage correspond to each data store of CDB (such as road networks, geospecific points, etc.).</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>In all cases, the experimentation focused on just vector data encoding as Shapefiles.</p>
-</div>
-<div class="paragraph">
-<p>The research and tests performed and reported in the Discussion Paper were refined and provided the basis for the work done in the OGC GeoPackage in CDB Interoperability Experiment. In the interoperability experiment, Use Case 1 above was further refined into 4 options - each a possible approach for one to one conversions. All options were tested and reported on by the particpants. Many of the lessons learned, independent of the IE focus on Shapefiles already in a CDB, are germane to any process or workflow in which data are stored in a GeoPackage container that is to then be stored in a CDB data store.</p>
-</div>
-<div class="paragraph">
-<p>If you wish to transform CDB structured Shapefiles into CDB structured GeoPackages, please refer to the Volume 14: OGC CDB Guidance on Conversion of CDB Shapefiles into CDB GeoPackages (Best Practice) <em>add URL and description when document is available</em>.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_requirements_for_using_geopackages_in_a_cdb_data_store"><a class="anchor" href="#_requirements_for_using_geopackages_in_a_cdb_data_store"></a>8. Requirements for Using GeoPackages in a CDB Data Store</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This section documents the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are <em>by reference</em> to specific requirements in both the GeoPackage and CDB standards. The referenced requirements are known as <em>dependent</em> requirements. For example, the GeoPackage standrds specifies that any valid GeoPackage shall have a file extension of .gpkg. The optional CDB GeoPackage extension specifies the same requirement.</p>
-</div>
-<div class="sect2">
-<h3 id="_requirement_that_one_and_only_vector_format_can_be_in_a_cdb_version"><a class="anchor" href="#_requirement_that_one_and_only_vector_format_can_be_in_a_cdb_version"></a>8.1. Requirement that one and only vector format can be in a CDB version</h3>
-<div class="paragraph">
-<p>The following requirement clearly states that any given version has only one allowed vector format. Currently, the two supported formats are the traditional Shapefiles and now GeoPackages. However, a CDB data store may have multiple versions. Therefore, the Shapefile format could be used in one version and GeoPackages used in another version.</p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">=== Identifed Use Cases
+While previous work focused on the process and requirements for transforming CDB structured vector Shapefiles into GeoPackages, the identified use cases are apropos when defining how to store and access any other vector/geometry content regardless of encoding or format. However, vector data encodings and containers developed outside a CDB data transformation process would also require definition of additional requirements. For example, a GeoJSON encoding of feature data would require a transformation to "break" the GeoJSON file into the appropriate tile and LoD structure in order to be consistent with the CDB data store and structure requirements. The same would be true of vector data provided as none CDB structured Shapefiles, CityGML encodings, Oracle Spatial structured data, Esri GeoDataBase files and so on.</p>
+<p class="tableblock">Both the OGC OGC CDB - Leveraging GeoPackage Discussion Paper and the OGC CDB Vector Data in GeoPackage Interoperability Experiment Engineering Report focused on a constrained set of well defined use cases related to the current CDB structure and how to best use GeoPackage for resolving each of the use cases. As such, dealing with non-CDB structured vector content was not addressed.</p>
+<p class="tableblock">The four initial use cases identified in the OGC Discussion Paper are:</p>
+<p class="tableblock">. Replace each Shapefile with a GeoPackage: The easiest way to integrate a GeoPackage container into a CDB data store is to replace each Shapefile in a CDB data store with a GeoPackage.
+. Make each CDB tile a layer in a single GeoPackage: Constructing each vector tile within CDB as a table within a GeoPackage for a given CDB dataset is a straightforward approach to utilize GeoPackage capabilities and significantly reduce file counts in a CDB (note that in GeoPackage a table is known as a layer).
+. Store each CDB LOD as a layer in GeoPackage: Design approach #3 incorporates the lessons learn from experimentation with approach #2 to limit the number of tables within a GeoPackage and reduce the number of files in a CDB.
+. Store each CDB Geocell as a layer in GeoPackage:  Design approach #4 extends design approach #3 to have a single GeoPackage per geotile of CDB. In this approach, the tables in the GeoPackage correspond to each data store of CDB (such as road networks, geospecific points, etc.).</p>
+<p class="tableblock">In all cases, the experimentation focused on just vector data encoding as Shapefiles.</p>
+<p class="tableblock">The research and tests performed and reported in the Discussion Paper were refined and provided the basis for the work done in the OGC GeoPackage in CDB Interoperability Experiment. In the interoperability experiment, Use Case 1 above was further refined into 4 options - each a possible approach for one to one conversions. All options were tested and reported on by the particpants. Many of the lessons learned, independent of the IE focus on Shapefiles already in a CDB, are germane to any process or workflow in which data are stored in a GeoPackage container that is to then be stored in a CDB data store.</p>
+<p class="tableblock">If you wish to transform CDB structured Shapefiles into CDB structured GeoPackages, please refer to the Volume 14: OGC CDB Guidance on Conversion of CDB Shapefiles into CDB GeoPackages (Best Practice) <em>add URL and description when document is available</em>.</p>
+<p class="tableblock">== Requirements for Using GeoPackages in a CDB Data Store
+This section documents the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are <em>by reference</em> to specific requirements in both the GeoPackage and CDB standards. The referenced requirements are known as <em>dependent</em> requirements. For example, the GeoPackage standrds specifies that any valid GeoPackage shall have a file extension of .gpkg. The optional CDB GeoPackage extension specifies the same requirement.</p>
+<p class="tableblock">=== Requirement that one and only vector format can be in a CDB version
+The following requirement clearly states that any given version has only one allowed vector format. Currently, the two supported formats are the traditional Shapefiles and now GeoPackages. However, a CDB data store may have multiple versions. Therefore, the Shapefile format could be used in one version and GeoPackages used in another version.</p>
+<p class="tableblock">[width="90%",cols="2,6"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> Vector Format by Version </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-core" class="bare">http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-core</a><br>
 <br>
 Any version in a CDB data store <em>SHALL</em> contain one and only one vector data format.</p></td>
 </tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>There is a related CDB recommendation that a feature should not have two representations.</p>
-</div>
-<div class="paragraph">
-<p>&lt;Insert recommendation include here. Page 230&gt;</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_requirement_on_geometry_types_and_feature_instances"><a class="anchor" href="#_requirement_on_geometry_types_and_feature_instances"></a>8.2. Requirement on geometry types and feature instances</h3>
-<div class="paragraph">
-<p>The following requirement clarifies the geometry types allowed for instances of feature data referenced to a tile. Essentially, all instances of a specific feature type (code?) SHALL be of the same geometry type.</p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">There is a related CDB recommendation that a feature should not have two representations.</p>
+<p class="tableblock">&lt;Insert recommendation include here. Page 230&gt;</p>
+<p class="tableblock">=== Requirement on geometry types and feature instances
+The following requirement clarifies the geometry types allowed for instances of feature data referenced to a tile. Essentially, all instances of a specific feature type (code?) SHALL be of the same geometry type.</p>
+<p class="tableblock">[width="90%",cols="2,6"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> Vector GeoPackage Geometry Type </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.2/geopackage/vector-geom-rule" class="bare">http://www.opengis.net/spec/cdb/1.2/geopackage/vector-geom-rule</a><br>
 <br>
 All instances of a given feature code <em>SHALL</em> be of the same geometry type. While the GeoPackage model supports encoding of 8 different types that can be stored in the same GeoPackage, the CDB standard requires a maximum of one geometry type for point features, a maximum of one geometry type for lineal features and a maximum of one geometry type for polygon features for each tile (for a maximum of 3 feature geometry types per tile). </p></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_geopackage_requirements"><a class="anchor" href="#_geopackage_requirements"></a>8.3. GeoPackage Requirements</h3>
-<div class="paragraph">
-<p>This section defines the GeoPackage requirements that need to be considered when implementing a CDB compliant GeoPackage for use in a CDB data store. This section also provides any clarifications and/or profiles of those requirements.</p>
-</div>
-<div class="sect3">
-<h4 id="_geopackage_requirements_core"><a class="anchor" href="#_geopackage_requirements_core"></a>8.3.1. GeoPackage Requirements - core</h4>
-<div class="paragraph">
-<p>The following requirement captures all of the core GeoPackage requirements that need to be implemented in order to be a fully compliant GeoPackage for use in a CDB data store. Please note that GeoPackage Requirements 10 and 11 on Coordiante Reference Systems has been profiled to be consistent with the mandatory requirements in the CDB standard.</p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">=== GeoPackage Requirements
+This section defines the GeoPackage requirements that need to be considered when implementing a CDB compliant GeoPackage for use in a CDB data store. This section also provides any clarifications and/or profiles of those requirements.</p>
+<p class="tableblock">==== GeoPackage Requirements - core
+The following requirement captures all of the core GeoPackage requirements that need to be implemented in order to be a fully compliant GeoPackage for use in a CDB data store. Please note that GeoPackage Requirements 10 and 11 on Coordiante Reference Systems has been profiled to be consistent with the mandatory requirements in the CDB standard.</p>
+<p class="tableblock">[width="90%",cols="2,6"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> GeoPackage Core </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.0/geopackage/geopackage-core" class="bare">http://www.opengis.net/spec/cdb/1.0/geopackage/geopackage-core</a><br>
 <br>
 Any CDB structured GeoPackage <em>SHALL</em> be compliant with GeoPackage Requirements 1 through 16 inclusive. Please see Requirement 4 of this standard for additional clarification on GeoPackage Requirements 10 and 11 - Spatial Reference Systems (aka coordinate reference systems in CDB).</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_geopackage_requirements_constrained_by_cdb_crs_profile"><a class="anchor" href="#_geopackage_requirements_constrained_by_cdb_crs_profile"></a>8.3.2. GeoPackage Requirements constrained by CDB - CRS Profile</h4>
-<div class="paragraph">
-<p>The following requirement clarifies (profiles) GeoPackage requirements 10 and 11 for specifying a Coordinate Reference System (CRS). The GeoPackage standard uses the term Spatial Reference System instead of Coordinate Reference System. This is because GeoPackage standard was designed to be flexible and to be able to accommodate any reference system. As such, GeoPackage tables that deal with CRS us the "spatial_ref" literal as part of the table name.</p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">==== GeoPackage Requirements constrained by CDB - CRS Profile
+The following requirement clarifies (profiles) GeoPackage requirements 10 and 11 for specifying a Coordinate Reference System (CRS). The GeoPackage standard uses the term Spatial Reference System instead of Coordinate Reference System. This is because GeoPackage standard was designed to be flexible and to be able to accommodate any reference system. As such, GeoPackage tables that deal with CRS us the "spatial_ref" literal as part of the table name.</p>
+<p class="tableblock">[width="90%",cols="2,6"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 4</strong> CDB - GeoPackage Core CRS </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-geopackage-core-crs" class="bare">http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-geopackage-core-crs</a><br>
@@ -1193,43 +857,27 @@ Any CDB structured GeoPackage <em>SHALL</em> be compliant with GeoPackage Requir
 As per CDB Requirement 8, any CDB structured GeoPackage <em>SHALL</em> specify geographic locations  using WGS-84 (World Geodetic System 1984), equivalent to EPSG (European Petroleum Survey Group) code 4326 (2 dimensions) or EPSG code 4979 (3 dimensions).
 If a geographic location also has an altitude, the altitude SHALL be expressed relative to the WGS-84 reference ellipsoid.</p></td>
 </tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Please also note the definition of Volume 1 CDB Core Requirement 7 Units of Measure and Requirement 111 Vextex CRS for guidance on proper and compliant use of CRS in a CDB compliant GeoPackage.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_geopackage_requirements_options_features"><a class="anchor" href="#_geopackage_requirements_options_features"></a>8.3.3. GeoPackage Requirements Options - Features</h4>
-<div class="paragraph">
-<p>The following requirement clarifies the GeoPackage requirements that shall be followed when implementing vector fectures in a GeoPackage. Please note that GeoPackage geometry and feature definitions are consistent with the OGC Simple Features model and ISO 19107.</p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">Please also note the definition of Volume 1 CDB Core Requirement 7 Units of Measure and Requirement 111 Vextex CRS for guidance on proper and compliant use of CRS in a CDB compliant GeoPackage.</p>
+<p class="tableblock">==== GeoPackage Requirements Options - Features
+The following requirement clarifies the GeoPackage requirements that shall be followed when implementing vector fectures in a GeoPackage. Please note that GeoPackage geometry and feature definitions are consistent with the OGC Simple Features model and ISO 19107.</p>
+<p class="tableblock">[width="90%",cols="2,6"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 5</strong> GeoPackage Vector Features </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.0/geopackage/geopackage-features" class="bare">http://www.opengis.net/spec/cdb/1.0/geopackage/geopackage-features</a><br>
 <br>
 Any CDB structured GeoPackage that encodes features <em>SHALL</em> be compliant with GeoPackage Requirements 18 through 33 inclusive and GeoPackage Requirements 146 and 150. Please see Requirement 20 of the GeoPackage standard for additional clarification on vector feature geometry types. These requirements are included in Clause 2.1 Features of the GeoPackage Standard.</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_requirement_cdb_core_need_to_discuss_this_one_could_be_changed_to_a_backend_process_and_not_a_client"><a class="anchor" href="#_requirement_cdb_core_need_to_discuss_this_one_could_be_changed_to_a_backend_process_and_not_a_client"></a>8.3.4. Requirement CDB Core - Need to discuss this one. Could be changed to a backend process and not a client.</h4>
-<div class="paragraph">
-<p>The following requirement defines how vector data in a GeoPackage is to be structured based on requirements specified in the CDB Core document.</p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">==== Requirement CDB Core - Need to discuss this one. Could be changed to a backend process and not a client.
+The following requirement defines how vector data in a GeoPackage is to be structured based on requirements specified in the CDB Core document.</p>
+<p class="tableblock">[width="90%",cols="2,6"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 6</strong> GeoPackage polygon readers </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.0/geopackage/polygon-rules-reader" class="bare">http://www.opengis.net/spec/cdb/1.0/geopackage/polygon-rules-reader</a><br>
@@ -1242,234 +890,172 @@ NOTE: This requirement needs to be discussed. Perhaps should be a data prep rule
 <p class="tableblock"> * Does not degenerate into zero-area parts</p>
 <p class="tableblock"> * Does not have clock-wise inner rings (“Dirty Polygon”) </p></td>
 </tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_cdb_requirements_for_a_cdb_compliant_geopackage_vector_encoding"><a class="anchor" href="#_cdb_requirements_for_a_cdb_compliant_geopackage_vector_encoding"></a>8.4. CDB Requirements for a CDB compliant GeoPackage Vector encoding</h3>
-<div class="paragraph">
-<p>This section documents the CDB requirements that need to be considered when implementing a CDB compliant GeoPackage for use in a CDB data store. This section also provides any clarifications and/or profiles of those requirements. The majority of the requirements referenced in this section are detailed in Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure (hereafter known as CDB Core). In the GeoPackage in CDB standard, requirements are specified that themselves reference specific requirements in the Core</p>
-</div>
-<div class="sect3">
-<h4 id="_cdb_vector_data_core_requirements"><a class="anchor" href="#_cdb_vector_data_core_requirements"></a>8.4.1. CDB Vector Data Core Requirements</h4>
-<div class="paragraph">
-<p>The following requirement profiles the CDB general data representation core requirements class: Requirements Class - General Data Representation (Requirements 6-10). Please note that the profile excludes the raster imagery compression requirement. The related CDB conformance class documented in Annex A of the CDB Core standard is A.1.1	General CDB Data Store and Implementation.</p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">=== CDB Requirements for a CDB compliant GeoPackage Vector encoding
+This section documents the CDB requirements that need to be considered when implementing a CDB compliant GeoPackage for use in a CDB data store. This section also provides any clarifications and/or profiles of those requirements. The majority of the requirements referenced in this section are detailed in Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure (hereafter known as CDB Core). In the GeoPackage in CDB standard, requirements are specified that themselves reference specific requirements in the Core</p>
+<p class="tableblock">==== CDB Vector Data Core Requirements
+The following requirement profiles the CDB general data representation core requirements class: Requirements Class - General Data Representation (Requirements 6-10). Please note that the profile excludes the raster imagery compression requirement. The related CDB conformance class documented in Annex A of the CDB Core standard is A.1.1	General CDB Data Store and Implementation.</p>
+<p class="tableblock">[width="90%",cols="2,6"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 7</strong> CDB general data requirements for GeoPackage: Profile </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-geopackage-data" class="bare">http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-geopackage-data</a><br>
 <br>
 Any CDB structured GeoPackage that encodes vector features <em>SHALL</em> be compliant with CDB Requirements 7 through 10. These requirements are documented in CDB Requirements Class <strong>General Data Representation Requirements</strong>. Please note that Requirement 6 image compression is excluded.</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_cdb_tiling_and_lod_rules_for_structuring_geopackages"><a class="anchor" href="#_cdb_tiling_and_lod_rules_for_structuring_geopackages"></a>8.4.2. CDB Tiling and LoD Rules for Structuring GeoPackages</h4>
-<div class="paragraph">
-<p>The following requirement references the CDB requirements for the rules for tiling the vector data in a GeoPackage and determination of the level of detail (LoD) in which the GeoPackage should be stored. Complete details for the CDB tiling and LoD storage model are found in CDB Volume 1 and clause "CDB Concepts".</p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">==== CDB Tiling and LoD Rules for Structuring GeoPackages
+The following requirement references the CDB requirements for the rules for tiling the vector data in a GeoPackage and determination of the level of detail (LoD) in which the GeoPackage should be stored. Complete details for the CDB tiling and LoD storage model are found in CDB Volume 1 and clause "CDB Concepts".</p>
+<p class="tableblock">[width="90%",cols="2,6"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 8</strong> CDB Tiles/Geocells and LoD relationships for GeoPackage </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-geopackage-tiles-and-lods" class="bare">http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-geopackage-tiles-and-lods</a><br>
 <br>
 Any CDB structured GeoPackage that encodes vector features <em>SHALL</em> be compliant with CDB Tiles/Geocells and LoD relationships 11 through 16 and 41 inclusive These requirements are documented in CDB Requirements Class <strong>Tiles/Geocells and LoD relationships (11-16 and 41)</strong>.</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_geopackage_in_cdb_tiled_vector_data_sets"><a class="anchor" href="#_geopackage_in_cdb_tiled_vector_data_sets"></a>8.4.3. GeoPackage in CDB - Tiled Vector Data Sets</h4>
-<div class="paragraph">
-<p>Clause 3.6 - Tiled Data Sets specifies the requirements and provides detailed supporting information on the tiling structure and LoD structure for tiled vector data. Note: All vector data sets are tiled in a CDB structured data store. The level-of-detail organization for GeoPackage vector datasets mimics the concept of map scaling commonly found in cartography. Please especially note Requirement 64 in the Core. Also pay careful attendtion to the tables and equations for calculating the latitude and longitude elements of the file names for the GeoPackages.</p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">==== GeoPackage in CDB - Tiled Vector Data Sets
+Clause 3.6 - Tiled Data Sets specifies the requirements and provides detailed supporting information on the tiling structure and LoD structure for tiled vector data. Note: All vector data sets are tiled in a CDB structured data store. The level-of-detail organization for GeoPackage vector datasets mimics the concept of map scaling commonly found in cartography. Please especially note Requirement 64 in the Core. Also pay careful attendtion to the tables and equations for calculating the latitude and longitude elements of the file names for the GeoPackages.</p>
+<p class="tableblock">[width="90%",cols="2,6"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 9</strong> vector tiled data  </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core-vector-tiled-data" class="bare">http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core-vector-tiled-data</a><br>
 <br>
 Any CDB structured GeoPackage that encodes vector features SHALL be compliant with CDB Core Tiled Data Requirements 64 through 67 inclusive These requirements are documented in the CDB Core Requirements Class Tiled Datasets (64-67).</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_cdb_geopackage_vector_datasets"><a class="anchor" href="#_cdb_geopackage_vector_datasets"></a>8.4.4. CDB GeoPackage Vector Datasets</h4>
-<div class="sect4">
-<h5 id="_cdb_vector_data_general_requirements"><a class="anchor" href="#_cdb_vector_data_general_requirements"></a>CDB Vector data general requirements</h5>
-<div class="paragraph">
-<p>This clause references requirements in section 5.7 Vector Datasets in the Volume 1 CDB Core Model Standard. The OGC suggests that clause 5.7 of the Core CDB standard be read in its entirety prior to developing capabilities to transform any non-CDB data source into a CDB structured GeoPackage that meets the mandatory requirements and would pass the CDB compliance tests.</p>
-</div>
-<div class="paragraph">
-<p>From Volume 1: <em>All of the information that is needed to instance features is organized in accordance to the CDB tile structure.  All the tiled Vector dataset files are located in the same directory. The dataset’s second component selector (CS2) is used to differentiate between files with the same extension or with the same Vector features.</em></p>
-</div>
-<div class="paragraph">
-<p>Further, the developer also needs to understand the feature coding system used in a CDB data store. From Volume 1: <em>The Vector dataset concept and the feature concepts overlap somewhat; some of the Vector datasets are generalizations or specializations of feature codes.  Section 1.5 CDB Data Dictionary provides a recommended mapping of the feature attributes across the CDB compliant datasets.  Note that the same feature should not have two representations.</em> More specifically, visit section 3.3.8.1 Feature Classification for more details. Basically, for the file path and naming requirements to be properly implemented, the correct feature codes need to be used. See <a href="http://schemas.opengis.net/cdb/1.1/Feature_Data_Dictionary.xml" class="bare">http://schemas.opengis.net/cdb/1.1/Feature_Data_Dictionary.xml</a> and <a href="http://schemas.opengis.net/cdb/1.1/Feature_Data_Dictionary.xsd" class="bare">http://schemas.opengis.net/cdb/1.1/Feature_Data_Dictionary.xsd</a> for a complete list of feature codes. The .xml file is actually located in <a href="http://schemas.opengis.net/cdb/cdb-1_1_0.zip" class="bare">http://schemas.opengis.net/cdb/cdb-1_1_0.zip</a> .</p>
-</div>
-<div class="paragraph">
-<p>The first set of tiled vector data requirements relates to coordinates for lights and the structure of vertex coordinates.</p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">==== CDB GeoPackage Vector Datasets</p>
+<p class="tableblock">===== CDB Vector data general requirements
+This clause references requirements in section 5.7 Vector Datasets in the Volume 1 CDB Core Model Standard. The OGC suggests that clause 5.7 of the Core CDB standard be read in its entirety prior to developing capabilities to transform any non-CDB data source into a CDB structured GeoPackage that meets the mandatory requirements and would pass the CDB compliance tests.</p>
+<p class="tableblock">From Volume 1: <em>All of the information that is needed to instance features is organized in accordance to the CDB tile structure.  All the tiled Vector dataset files are located in the same directory. The dataset’s second component selector (CS2) is used to differentiate between files with the same extension or with the same Vector features.</em></p>
+<p class="tableblock">Further, the developer also needs to understand the feature coding system used in a CDB data store. From Volume 1: <em>The Vector dataset concept and the feature concepts overlap somewhat; some of the Vector datasets are generalizations or specializations of feature codes.  Section 1.5 CDB Data Dictionary provides a recommended mapping of the feature attributes across the CDB compliant datasets.  Note that the same feature should not have two representations.</em> More specifically, visit section 3.3.8.1 Feature Classification for more details. Basically, for the file path and naming requirements to be properly implemented, the correct feature codes need to be used. See <a href="http://schemas.opengis.net/cdb/1.1/Feature_Data_Dictionary.xml" class="bare">http://schemas.opengis.net/cdb/1.1/Feature_Data_Dictionary.xml</a> and <a href="http://schemas.opengis.net/cdb/1.1/Feature_Data_Dictionary.xsd" class="bare">http://schemas.opengis.net/cdb/1.1/Feature_Data_Dictionary.xsd</a> for a complete list of feature codes. The .xml file is actually located in <a href="http://schemas.opengis.net/cdb/cdb-1_1_0.zip" class="bare">http://schemas.opengis.net/cdb/cdb-1_1_0.zip</a> .</p>
+<p class="tableblock">The first set of tiled vector data requirements relates to coordinates for lights and the structure of vertex coordinates.</p>
+<p class="tableblock">[width="90%",cols="2,6"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 10</strong> Tiled Vector Datasets  </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core-tiled-vector-datasets" class="bare">http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core-tiled-vector-datasets</a><br>
 <br>
 Any CDB structured GeoPackage that encodes vector features SHALL be compliant with CDB Core Tiled Vector Datasets Requirements 107 through 111 inclusive. These requirements are documented in the CDB Core Requirements Class Tiled Vector Datasets (107-111).</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="_cdb_attribution"><a class="anchor" href="#_cdb_attribution"></a>CDB Attribution</h5>
-<div class="paragraph">
-<p>Attributes are used to describe one or more real or virtual characteristics of a feature.  Features can be assigned a variable number of attributes. The following requirements from the core document and related informative discussion in Volume 1 Core describe the CDB compliant usage of attributes in a CDB datastore.</p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">===== CDB Attribution
+Attributes are used to describe one or more real or virtual characteristics of a feature.  Features can be assigned a variable number of attributes. The following requirements from the core document and related informative discussion in Volume 1 Core describe the CDB compliant usage of attributes in a CDB datastore.</p>
+<p class="tableblock">[width="90%",cols="2,6"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 11</strong> Tiled Vector Datasets Attribution  </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core-tiled-vector-datasets-attribution" class="bare">http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core-tiled-vector-datasets-attribution</a><br>
 <br>
 Any CDB structured GeoPackage that encodes vector features SHALL be compliant with CDB Core Tiled Vector Datasets Requirements 112 through 116 inclusive. These requirements are documented in the CDB Core Requirements Class 5.7.1.2	CDB Attribution  (112-116).</p></td>
 </tr>
-</tbody>
-</table>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_conformance_class_abstract_test_suite_normative"><a class="anchor" href="#_conformance_class_abstract_test_suite_normative"></a>Annex A: Conformance Class Abstract Test Suite (Normative)</h2>
-<div class="sectionbody">
-<div class="admonitionblock note">
-<table>
 <tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
-</td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">&lt;&lt;&lt;
+////
+add or remove annexes after "A" as necessary
+////
+[appendix]
+:appendix-caption: Annex
+== Conformance Class Abstract Test Suite (Normative)</p>
+<p class="tableblock">[NOTE]
+Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)</p>
+<p class="tableblock">=== Conformance Class A</p>
+<p class="tableblock">==== Requirement 1
+[cols="&gt;20h,&lt;80d",width="100%"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
 </tr>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_conformance_class_a"><a class="anchor" href="#_conformance_class_a"></a>A.1. Conformance Class A</h3>
-<div class="sect3">
-<h4 id="_requirement_1"><a class="anchor" href="#_requirement_1"></a>A.1.1. Requirement 1</h4>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
 <tr>
-<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test id:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test id:</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/conf/conf-class-a/req-name-1</p></td>
 </tr>
 <tr>
-<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement:</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/req-class-a/req-name-1</p></td>
 </tr>
 <tr>
-<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test purpose:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test purpose:</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Verify that&#8230;&#8203;</p></td>
 </tr>
 <tr>
-<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test method:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test method:</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Inspect&#8230;&#8203;</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_requirement_2"><a class="anchor" href="#_requirement_2"></a>A.1.2. Requirement 2</h4>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_geopackage_and_shapefile_geometry_types_cross_walk"><a class="anchor" href="#_geopackage_and_shapefile_geometry_types_cross_walk"></a>Annex B: GeoPackage and Shapefile Geometry types cross walk.</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<thead>
 <tr>
-<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><strong>Value</strong></th>
-<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><strong>GeoPackage geometry type</strong></th>
-<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><strong>Shapefile Vector type</strong></th>
-<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><strong>Fields</strong></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">==== Requirement 2</p>
+<p class="tableblock">&lt;&lt;&lt;
+[appendix]
+:appendix-caption: Annex
+== GeoPackage and Shapefile Geometry types cross walk.</p>
+<p class="tableblock">[cols=",,,",options="header",]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
 </tr>
-</thead>
-<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Value</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>GeoPackage geometry type</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Shapefile Vector type</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Fields</strong></p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">0</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Null shape</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">None</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">1</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Point</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Point</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">X, Y</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">3</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Linestring</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Polyline</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MBR, Number of parts, Number of points, Parts, Points</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">5</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Polygon</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Polygon</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MBR, Number of parts, Number of points, Parts, Points</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">8</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MultiPoint</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MultiPoint</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MBR, Number of points, Points</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">11</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Point</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">PointZ</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p>X, Y, Z <em>Optional</em>: M</p>
@@ -1478,6 +1064,8 @@ Ensure that there is a conformance class for each requirements class and a test 
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">13</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Linestring</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">PolylineZ</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><em>Mandatory</em>: MBR, Number of parts, Number of points, Parts, Points, Z range, Z array <em>Optional</em>: M range, M array</p>
@@ -1486,6 +1074,8 @@ Ensure that there is a conformance class for each requirements class and a test 
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">15</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Polygon</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">PolygonZ</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><em>Mandatory</em>: MBR, Number of parts, Number of points, Parts, Points, Z range, Z array <em>Optional</em>: M range, M array</p>
@@ -1494,6 +1084,8 @@ Ensure that there is a conformance class for each requirements class and a test 
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">18</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Multipoint</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MultiPointZ</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><em>Mandatory</em>: MBR, Number of points, Points, Z range, Z array <em>Optional</em>: M range, M array</p>
@@ -1502,12 +1094,16 @@ Ensure that there is a conformance class for each requirements class and a test 
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">21</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Point</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">PointM</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">X, Y, M</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">23</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Linestring</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">PolylineM</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><em>Mandatory</em>: MBR, Number of parts, Number of points, Parts, Points <em>Optional</em>: M range, M array</p>
@@ -1516,6 +1112,8 @@ Ensure that there is a conformance class for each requirements class and a test 
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">25</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Polygon</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">PolygonM</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><em>Mandatory</em>: MBR, Number of parts, Number of points, Parts, Points <em>Optional</em>: M range, M array</p>
@@ -1524,6 +1122,8 @@ Ensure that there is a conformance class for each requirements class and a test 
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">28</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MultiPoint</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MultiPointM</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><em>Mandatory</em>: MBR, Number of points, Points <em>Optional Fields</em>: M range, M array</p>
@@ -1532,92 +1132,48 @@ Ensure that there is a conformance class for each requirements class and a test 
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">31</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Surface</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MultiPatch</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><em>Mandatory</em>: MBR, Number of parts, Number of points, Parts, Part types, Points, Z range, Z array <em>Optional</em>: M range, M array</p>
 </div></div></td>
 </tr>
-</tbody>
-</table>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_revision_history"><a class="anchor" href="#_revision_history"></a>Annex C: Revision History</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-</colgroup>
-<thead>
 <tr>
-<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Date</th>
-<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Release</th>
-<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Editor</th>
-<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Primary clauses modified</th>
-<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Description</th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p>
+<p class="tableblock">&lt;&lt;&lt;
+////
+Revision History should be the last annex before the Bibliography
+Bibliography should be the last annex
+////
+[appendix]
+:appendix-caption: Annex
+== Revision History</p>
+<p class="tableblock">[width="90%",options="header"]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">===</p></td>
 </tr>
-</thead>
-<tbody>
 <tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Release</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Editor</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Primary clauses modified</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">2019-11-06</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">1.2</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">C. Reed</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">all</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">initial version</p></td>
 </tr>
 </tbody>
 </table>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Bibliography"><a class="anchor" href="#Bibliography"></a>Annex D: Bibliography</h2>
-<div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="title">Example Bibliography (Delete this note).</div>
-<div class="paragraph">
-<p>The TC has approved Springer LNCS as the official document citation type.</p>
-</div>
-<div class="paragraph">
-<p>Springer LNCS is widely used in technical and computer science journals and other publications</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>For citations in the text please use square brackets and consecutive numbers: [1], [2], [3]</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>– Actual References:</p>
-</div>
-<div class="paragraph">
-<p>[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
-</div>
-<div class="paragraph">
-<p>[n] Web: Author Surname, A.: Title, <a href="http://Website-Url" class="bare">http://Website-Url</a></p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p></p>
-</div>
-<div id="OGC2015" class="paragraph">
-<p>[1] OGC: OGC Testbed 12 Annex B: Architecture. (2015).</p>
-</div>
 </div>
 </div>
 </div>
