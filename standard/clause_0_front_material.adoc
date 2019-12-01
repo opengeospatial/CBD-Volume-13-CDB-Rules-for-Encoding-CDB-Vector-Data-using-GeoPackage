@@ -36,7 +36,7 @@ Organization name(s)
 
 All questions regarding this submission should be directed to the editor or the submitters:
 
-|====
+|===
 |*Name* |*Affiliation*
 |Carl Reed _(editor)_ |Carl Reed & Associates
 |Ryan Franz |FlightSafety Visual Systems
