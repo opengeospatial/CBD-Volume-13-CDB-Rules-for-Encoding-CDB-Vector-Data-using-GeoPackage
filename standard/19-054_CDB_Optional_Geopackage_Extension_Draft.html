@@ -571,23 +571,26 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_conformance">2. Conformance</a></li>
 <li><a href="#_references">3. References</a></li>
 <li><a href="#_terms_and_definitions">4. Terms and Definitions</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#_coordinate_reference_system">4.1. <strong>coordinate reference system</strong></a></li>
 <li><a href="#_coordinate_system">4.2. <strong>coordinate system</strong></a></li>
 <li><a href="#_dataset">4.3. <strong>dataset</strong></a></li>
 <li><a href="#_feature">4.4. <strong>feature</strong></a></li>
 <li><a href="#_feature_collection_collection">4.5. <strong>feature collection; collection</strong></a></li>
 <li><a href="#_height">4.6. <strong>Height</strong></a></li>
-<li><a href="#_linestring">4.7. <strong>linestring</strong></a></li>
-<li><a href="#_point">4.8. <strong>point</strong></a></li>
-<li><a href="#_polygon">4.9. <strong>polygon</strong></a></li>
-<li><a href="#_geopackage_file">4.10. <strong>GeoPackage file</strong></a></li>
-<li><a href="#_tile">4.11. <strong>tile</strong></a></li>
-<li><a href="#_valid_geopackage">4.12. <strong>Valid GeoPackage</strong></a></li>
-<li><a href="#_vector_and_vector_data">4.13. <strong>vector and vector data</strong></a></li>
-<li><a href="#_vector_geometry">4.14. <strong>vector geometry</strong></a></li>
-<li><a href="#_version">4.15. <strong>Version</strong></a></li>
-<li><a href="#_abbreviations">4.16. Abbreviations</a></li>
+<li><a href="#_linestring">4.7. <strong>linestring</strong></a>
+<ul class="sectlevel3">
+<li><a href="#_point">4.7.1. <strong>point</strong></a></li>
+</ul>
+</li>
+<li><a href="#_polygon">4.8. <strong>polygon</strong></a></li>
+<li><a href="#_geopackage_file">4.9. <strong>GeoPackage file</strong></a></li>
+<li><a href="#_tile">4.10. <strong>tile</strong></a></li>
+<li><a href="#_valid_geopackage">4.11. <strong>Valid GeoPackage</strong></a></li>
+<li><a href="#_vector_and_vector_data">4.12. <strong>vector and vector data</strong></a></li>
+<li><a href="#_vector_geometry">4.13. <strong>vector geometry</strong></a></li>
+<li><a href="#_version">4.14. <strong>Version</strong></a></li>
+<li><a href="#_abbreviations">4.15. Abbreviations</a></li>
 </ul>
 </li>
 <li><a href="#_conventions">5. Conventions</a>
@@ -808,20 +811,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>For the purposes of this document, the following additional terms and definitions apply.</p>
 </div>
-<div class="sect3">
-<h4 id="_coordinate_reference_system"><a class="anchor" href="#_coordinate_reference_system"></a>4.1. <strong>coordinate reference system</strong></h4>
+<div class="sect2">
+<h3 id="_coordinate_reference_system"><a class="anchor" href="#_coordinate_reference_system"></a>4.1. <strong>coordinate reference system</strong></h3>
 <div class="paragraph">
 <p>coordinate system that is related to the real world by a datum [ISO 19111]</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_coordinate_system"><a class="anchor" href="#_coordinate_system"></a>4.2. <strong>coordinate system</strong></h4>
+<div class="sect2">
+<h3 id="_coordinate_system"><a class="anchor" href="#_coordinate_system"></a>4.2. <strong>coordinate system</strong></h3>
 <div class="paragraph">
 <p>set of mathematical rules for specifying how coordinates are to be assigned to points [ISO 19111]</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_dataset"><a class="anchor" href="#_dataset"></a>4.3. <strong>dataset</strong></h4>
+<div class="sect2">
+<h3 id="_dataset"><a class="anchor" href="#_dataset"></a>4.3. <strong>dataset</strong></h3>
 <div class="paragraph">
 <p>collection of data, published or curated by a single agent, and available for access or download in one or more formats <a href="#DCAT">[DCAT]</a></p>
 </div>
@@ -839,8 +842,8 @@ the use of the term collection in this standard. See the definition of feature c
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_feature"><a class="anchor" href="#_feature"></a>4.4. <strong>feature</strong></h4>
+<div class="sect2">
+<h3 id="_feature"><a class="anchor" href="#_feature"></a>4.4. <strong>feature</strong></h3>
 <div class="paragraph">
 <p>abstraction of real world phenomena [ISO 19101-1:2014]</p>
 </div>
@@ -857,8 +860,8 @@ If you are unfamiliar with the term 'feature', the explanations on <a href="http
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_feature_collection_collection"><a class="anchor" href="#_feature_collection_collection"></a>4.5. <strong>feature collection; collection</strong></h4>
+<div class="sect2">
+<h3 id="_feature_collection_collection"><a class="anchor" href="#_feature_collection_collection"></a>4.5. <strong>feature collection; collection</strong></h3>
 <div class="paragraph">
 <p>a set of <strong>features</strong> from a <strong>dataset</strong></p>
 </div>
@@ -876,20 +879,19 @@ collection'. This is done to make this document easier to understand for those t
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_height"><a class="anchor" href="#_height"></a>4.6. <strong>Height</strong></h4>
+<div class="sect2">
+<h3 id="_height"><a class="anchor" href="#_height"></a>4.6. <strong>Height</strong></h3>
 <div class="paragraph">
 <p>Distance of a point from a chosen reference surface measured upward along a line perpendicular to that surface. [ISO 19111] Note 1 to entry: A height below the reference surface will have a negative value, which would embrace both gravity-related heights and ellipsoidal heights.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_linestring"><a class="anchor" href="#_linestring"></a>4.7. <strong>linestring</strong></h4>
+<div class="sect2">
+<h3 id="_linestring"><a class="anchor" href="#_linestring"></a>4.7. <strong>linestring</strong></h3>
 <div class="paragraph">
 <p>curve composed of straight-line segments (aka line) [ISO 19136:2007]</p>
 </div>
-</div>
 <div class="sect3">
-<h4 id="_point"><a class="anchor" href="#_point"></a>4.8. <strong>point</strong></h4>
+<h4 id="_point"><a class="anchor" href="#_point"></a>4.7.1. <strong>point</strong></h4>
 <div class="paragraph">
 <p>0-dimensional geometric primitive, representing a position [ISO 19136:2007]</p>
 </div>
@@ -897,32 +899,33 @@ collection'. This is done to make this document easier to understand for those t
 <p>Note to entry: The boundary of a point is the empty set.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_polygon"><a class="anchor" href="#_polygon"></a>4.9. <strong>polygon</strong></h4>
+</div>
+<div class="sect2">
+<h3 id="_polygon"><a class="anchor" href="#_polygon"></a>4.8. <strong>polygon</strong></h3>
 <div class="paragraph">
 <p>planar surface defined by 1 exterior boundary and 0 or more interior boundaries [ISO 19136:2007]</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_geopackage_file"><a class="anchor" href="#_geopackage_file"></a>4.10. <strong>GeoPackage file</strong></h4>
+<div class="sect2">
+<h3 id="_geopackage_file"><a class="anchor" href="#_geopackage_file"></a>4.9. <strong>GeoPackage file</strong></h3>
 <div class="paragraph">
 <p>a platform-independent SQLite database file that contains GeoPackage data and metadata tables with specified definitions, integrity assertions, format limitations and content constraints.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_tile"><a class="anchor" href="#_tile"></a>4.11. <strong>tile</strong></h4>
+<div class="sect2">
+<h3 id="_tile"><a class="anchor" href="#_tile"></a>4.10. <strong>tile</strong></h3>
 <div class="paragraph">
 <p>a geometric shape with known properties that is the result of the tiling (tessellation) of a plane. A tile consists of a single connected "piece" without "holes" or "lines" (topological disc).</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_valid_geopackage"><a class="anchor" href="#_valid_geopackage"></a>4.12. <strong>Valid GeoPackage</strong></h4>
+<div class="sect2">
+<h3 id="_valid_geopackage"><a class="anchor" href="#_valid_geopackage"></a>4.11. <strong>Valid GeoPackage</strong></h3>
 <div class="paragraph">
 <p>A GeoPackage that contains features per clause Features and/or tiles per clause Tiles and row(s) in the gpkg_contents table with data_type column values of "features" and/or "tiles" describing the user data tables.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_vector_and_vector_data"><a class="anchor" href="#_vector_and_vector_data"></a>4.13. <strong>vector and vector data</strong></h4>
+<div class="sect2">
+<h3 id="_vector_and_vector_data"><a class="anchor" href="#_vector_and_vector_data"></a>4.12. <strong>vector and vector data</strong></h3>
 <div class="paragraph">
 <p>quantity having direction as well as magnitude</p>
 </div>
@@ -930,20 +933,20 @@ collection'. This is done to make this document easier to understand for those t
 <p>Note to entry: A directed line segment represents a vector if the length and direction of the line segment are equal to the magnitude and direction of the vector. The term vector data refers to data that represents the spatial configuration of features as a set of directed line segments. [ISO 19123:2005]</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_vector_geometry"><a class="anchor" href="#_vector_geometry"></a>4.14. <strong>vector geometry</strong></h4>
+<div class="sect2">
+<h3 id="_vector_geometry"><a class="anchor" href="#_vector_geometry"></a>4.13. <strong>vector geometry</strong></h3>
 <div class="paragraph">
 <p>representation of geometry through the use of constructive geometric primitives [ISO 19107:2003]</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_version"><a class="anchor" href="#_version"></a>4.15. <strong>Version</strong></h4>
+<div class="sect2">
+<h3 id="_version"><a class="anchor" href="#_version"></a>4.14. <strong>Version</strong></h3>
 <div class="paragraph">
 <p>A collection of pure CDB Datasets and/or user-defined datasets. Please see section 3.2 of Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure for details on the CDB versioning strategy and structure.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_abbreviations"><a class="anchor" href="#_abbreviations"></a>4.16. Abbreviations</h3>
+<h3 id="_abbreviations"><a class="anchor" href="#_abbreviations"></a>4.15. Abbreviations</h3>
 <div class="paragraph">
 <p><strong>GPKG</strong>  GeoPackage</p>
 </div>
