@@ -1,4 +1,4 @@
-:Title: Volume 13: OGC CDB Optional Extension for Structuring a CDB compliant GeoPackage (Normative).
+:Title: Volume 13: OGC CDB Rules for Encoding CDB Vector Data using GeoPackage (Normative, Optional Extension).
 :titletext: {Title}
 :doctype: book
 :encoding: utf-8
