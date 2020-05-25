@@ -33,3 +33,8 @@ include::abstract_tests/TEST004.adoc[]
 ==== Verify that GeoPackage Requirements 18 through 33 are implemented 
 
 include::abstract_tests/TEST005.adoc[]
+
+==== Verify that polygon data is "clean"
+
+include::abstract_tests/TEST006.adoc[]
+
