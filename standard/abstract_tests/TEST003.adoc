@@ -1,0 +1,9 @@
+[cols=",,",]
+|==================================================================================================================================
+|*Conformance Class* 2+|*/conf/cdb-core/geopackage/geopackage-core* 
+|*Requirements* 2+|/req/geopackage/geopackage-core
+|*Dependency* 2+| GeoPackage Requirements 1 through 16 inclusive and GeoPackage ATS.
+|*Test 3* |*Test purpose* |Any CDB structured GeoPackage SHALL be compliant with GeoPackage Requirements 1 through 16 inclusive. 
+| |*Test method* |As per the GeoPackage Abstract Test Suite.
+| |*Test type* |Conformance
+|==================================================================================================================================
