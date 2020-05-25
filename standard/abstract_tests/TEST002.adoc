@@ -1,0 +1,9 @@
+[cols=",,",]
+|==================================================================================================================================
+|*Conformance Class* 2+|*/conf/cdb-core/geopackage* 
+|*Requirements* 2+|/req/geopackage/vector-geom-rule
+|*Dependency* 2+| Volume 1: CDB Core - geometry rule.
+|*Test 1* |*Test purpose* |Verify that all instances of a given feature code are of the same geometry type.
+| |*Test method* |Pass if there is only one geometry type for a given feature code.
+| |*Test type* |Conformance
+|==================================================================================================================================
