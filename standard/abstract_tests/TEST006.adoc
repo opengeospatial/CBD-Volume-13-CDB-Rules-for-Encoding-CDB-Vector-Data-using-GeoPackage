@@ -1,0 +1,9 @@
+[cols=",,",]
+|==================================================================================================================================
+|*Conformance Class* 2+|*/conf/cdb-core/geopackage/polygon-rules-reader* 
+|*Requirements* 2+|/req/geopackage/polygon-rules-reader
+|*Dependency* 2+| CDB Vector Data Requirement.
+|*Test 6* |*Test purpose* |GeoPackage readers SHALL handle the error cases with proper error handling and reporting for Polygon geometries.
+| |*Test method* |Visual.
+| |*Test type* |Conformance
+|==================================================================================================================================
