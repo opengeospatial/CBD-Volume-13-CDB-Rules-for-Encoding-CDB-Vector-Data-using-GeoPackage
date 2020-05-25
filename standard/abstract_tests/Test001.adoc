@@ -1,0 +1,9 @@
+[cols=",,",]
+|==================================================================================================================================
+|*Conformance Class* 2+|*/conf/cdb-core/geopackage* 
+|*Requirements* 2+|/req/geopackage/cdb-core
+|*Dependency* 2+| Volume 1: CDB Core - versioning.
+|*Test 1* |*Test purpose* |Verify that any version in a CDB data store contains one and only one vector data format.
+| |*Test method* |Pass there is only one vector data type in a version.
+| |*Test type* |Conformance
+|==================================================================================================================================
