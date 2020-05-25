@@ -20,6 +20,10 @@ include::abstract_tests/TEST002.adoc[]
 
 ==== Verify that implementations support the literal case rules as specified in the CDB standard
 
-include::abstract_tests/TEST003.adoc[]
+include::abstract_tests/TEST012.adoc[]
+
+==== Verify that the CRS used is WGS-84 (2D or 3D)
+
+include::abstract_tests/TEST004.adoc[]
 
 
