@@ -6,7 +6,7 @@
 
 This section describes conformance test for the the optionl extension to the CDB standard for structuring and storing any vector data as a GeoPackage container. These abstract test cases describe the conformance criteria for verifying the structure and content of any data store or database claiming conformance to the CDB 1.2 standard.
 
-The conformance class base id is “http://www.opengis.net/spec/cdb/1.2/” and all of the other conformance tests URLs are created in this path. Each conformace class then appends: "geopackage/conf/" to this base ID. Another issue that the reader should pay attention to is the test method. When the test method is assigned with “Visual”, it means that the purpose of the test should be “visually” investigate the file contents, image, or other content.
+The conformance class base id is “http://www.opengis.net/spec/cdb/1.2/” and all of the other conformance tests URLs are created in this path. Each conformace class then appends: "/conf/cdb-core/geopackage" to this base ID. Another issue that the reader should pay attention to is the test method. When the test method is assigned with “Visual”, it means that the purpose of the test should be “visually” investigate the file contents, image, or other content.
 
 ==== Only one vector data encoding/format per version.
 
@@ -21,3 +21,5 @@ include::abstract_tests/TEST002.adoc[]
 ==== Verify that implementations support the literal case rules as specified in the CDB standard
 
 include::abstract_tests/TEST003.adoc[]
+
+
