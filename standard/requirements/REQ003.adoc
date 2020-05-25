@@ -1,6 +1,6 @@
 [width="90%",cols="2,6"]
 |===
-|*Requirement 3* GeoPackage Core {set:cellbgcolor:#CACCCE}|http://www.opengis.net/spec/cdb/1.0/geopackage/geopackage-core +
+|*Requirement 3* GeoPackage Core {set:cellbgcolor:#CACCCE}|http://www.opengis.net/spec/cdb/1.2/geopackage/geopackage-core +
  +
 Any CDB structured GeoPackage _SHALL_ be compliant with GeoPackage Requirements 1 through 16 inclusive. Please see Requirement 4 of this standard for a restriction (profile) on GeoPackage Requirements 10 and 11 - Spatial Reference Systems (aka coordinate reference systems in CDB). 
 {set:cellbgcolor:#FFFFFF}
