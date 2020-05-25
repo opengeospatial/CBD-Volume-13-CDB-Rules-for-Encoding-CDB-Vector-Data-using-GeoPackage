@@ -1,6 +1,6 @@
 [width="90%",cols="2,6"]
 |===
-|*Requirement 4* CDB - GeoPackage Core CRS {set:cellbgcolor:#CACCCE}|http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-geopackage-core-crs +
+|*Requirement 4* CDB - GeoPackage Core CRS {set:cellbgcolor:#CACCCE}|http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-geopackage-core-crs +
  +
 As per CDB Requirement 8, any CDB structured GeoPackage _SHALL_ specify geographic locations  using WGS-84 (World Geodetic System 1984), equivalent to EPSG (European Petroleum Survey Group) code 4326 (2 dimensions) or EPSG code 4979 (3 dimensions). 
 If a geographic location also has an altitude, the altitude _SHALL_ be expressed relative to the WGS-84 reference ellipsoid.
