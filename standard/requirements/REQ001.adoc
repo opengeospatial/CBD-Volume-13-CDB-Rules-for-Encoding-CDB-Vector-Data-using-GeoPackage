@@ -1,7 +1,7 @@
 [width="90%",cols="2,6"]
 |===
 |*Requirement 1* Vector Format by Version {set:cellbgcolor:#CACCCE}
-|http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-core +
+|http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core +
  +
 Any version in a CDB data store _SHALL_ contain one and only one vector data format.
 {set:cellbgcolor:#FFFFFF}
