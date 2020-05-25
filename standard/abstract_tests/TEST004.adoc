@@ -2,7 +2,7 @@
 |==================================================================================================================================
 |*Conformance Class* 2+|*/conf/cdb-core/geopackage/cdb-geopackage-core-crs* 
 |*Requirements* 2+|/req/geopackage/cdb-geopackage-core-crs
-|*Dependency* 2+| Volume 1: CDB Core - CDB - GeoPackage Core CRS.
+|*Dependency* 2+| Volume 1: CDB Core - CDB Requirement 8 and GeoPackage Requirements 10 and 11.
 |*Test 4* |*Test purpose* |As per CDB Requirement 8, any CDB structured GeoPackage SHALL specify geographic locations using WGS-84 (World Geodetic System 1984), equivalent to EPSG (European Petroleum Survey Group) code 4326 (2 dimensions) or EPSG code 4979 (3 dimensions). If a geographic location also has an altitude, the altitude SHALL be expressed relative to the WGS-84 reference ellipsoid.
 | |*Test method* |Verify that the CRS used are correct.
 | |*Test type* |Conformance
