@@ -1,0 +1,9 @@
+[cols=",,",]
+|==================================================================================================================================
+|*Conformance Class* 2+|*/conf/cdb-core/geopackage/cdb-gpkg-literal-case* 
+|*Requirements* 2+|/req/geopackage/cdb-gpkg-literal-case
+|*Dependency* 2+| Volume 1: CDB Core - literal.
+|*Test 1* |*Test purpose* |Verify that implementations support the literal case rules as specified in the CDB standard.  Additionally, any name SHALL have its first 10 characters as unique. Finally, the GeoPackage file extension .gpkg SHALL always be lower case.
+| |*Test method* |Visual
+| |*Test type* |Conformance
+|==================================================================================================================================
