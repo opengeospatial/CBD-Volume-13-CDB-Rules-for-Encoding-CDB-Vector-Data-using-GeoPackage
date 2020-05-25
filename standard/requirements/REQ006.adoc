@@ -13,6 +13,6 @@ GeoPackage readers _SHALL_ handle the following cases with proper error handling
 
  * Does not have clock-wise inner rings (“Dirty Polygon”) {set:cellbgcolor:#FFFFFF}
 
-NOTE: This requirement may change in a future version. These cases may be handled as rules for data prepration.
+NOTE: This requirement may change in a future version. These cases may be handled as rules for data preparation.
 
 |===
