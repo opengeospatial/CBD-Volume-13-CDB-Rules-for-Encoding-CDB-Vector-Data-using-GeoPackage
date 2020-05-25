@@ -3,6 +3,6 @@
 |*Requirement 12* Tiled Vector Datasets Attribution  {set:cellbgcolor:#CACCCE}
 |http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-gpkg-literal-case +
  +
-Implementations _SHALL_ support the literal case rules as specified in the CDB standard. CDB file naming conventions are case sensitive. Further, regardless of case, any name such as “house” _SHALL_ have the same semantic meaning. Addiotnally, any name _SHALL_ have its first 10 characters as unique. Finally, the GeoPackage file extension .gpkg  _SHALL_ always be lower case.
+Implementations _SHALL_ support the literal case rules as specified in the CDB standard. CDB file naming conventions are case sensitive. Further, regardless of case, any name such as “house” _SHALL_ have the same semantic meaning. Additionally, any name _SHALL_ have its first 10 characters as unique. Finally, the GeoPackage file extension .gpkg  _SHALL_ always be lower case.
 {set:cellbgcolor:#FFFFFF}
 |===
