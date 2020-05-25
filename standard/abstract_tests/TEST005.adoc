@@ -3,7 +3,7 @@
 |*Conformance Class* 2+|*/conf/cdb-core/geopackage/geopackage-features* 
 |*Requirements* 2+|/req/geopackage/geopackage-features
 |*Dependency* 2+| GeoPackage Requirements 18 through 33 inclusive and GeoPackage Requirements 146 and 150 and the GeoPackage ATS.
-|*Test 3* |*Test purpose* |Any CDB structured GeoPackage that encodes features SHALL be compliant with GeoPackage Requirements 18 through 33 inclusive and GeoPackage Requirements 146 and 150. 
+|*Test 5* |*Test purpose* |Any CDB structured GeoPackage that encodes features SHALL be compliant with GeoPackage Requirements 18 through 33 inclusive and GeoPackage Requirements 146 and 150. 
 | |*Test method* |As per the GeoPackage Abstract Test Suite.
 | |*Test type* |Conformance
 |==================================================================================================================================
