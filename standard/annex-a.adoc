@@ -22,8 +22,14 @@ include::abstract_tests/TEST002.adoc[]
 
 include::abstract_tests/TEST012.adoc[]
 
+==== Verify that GeoPackage Requirements 1 through 16 are implemented
+
+include::abstract_tests/TEST003.adoc[]
+
 ==== Verify that the CRS used is WGS-84 (2D or 3D)
 
 include::abstract_tests/TEST004.adoc[]
 
+==== Verify that GeoPackage Requirements 18 through 33 are implemented 
 
+include::abstract_tests/TEST005.adoc[]
