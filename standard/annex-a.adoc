@@ -12,9 +12,12 @@ The conformance class base id is “http://www.opengis.net/spec/cdb/1.2/” and 
 
 The following conformance class verifies that each "version" in a CDB data store contains one and only one vector encoding/format.
 
-include::abstract_tests/TEST001.adoc
+include::abstract_tests/TEST001.adoc[]
 
 ==== All instances of a given feature code SHALL be of the same geometry type. 
 
-include::abstract_tests/TEST002.adoc
+include::abstract_tests/TEST002.adoc[]
 
+==== Verify that implementations support the literal case rules as specified in the CDB standard
+
+include::abstract_tests/TEST003.adoc[]
