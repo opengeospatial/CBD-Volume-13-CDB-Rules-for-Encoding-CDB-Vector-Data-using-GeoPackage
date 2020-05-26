@@ -701,10 +701,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_conformance_class_abstract_test_suite_normative">Annex A: Conformance Class Abstract Test Suite (Normative)</a>
 <ul class="sectlevel2">
-<li><a href="#_conformance_class_a">A.1. Conformance Class A</a>
+<li><a href="#_conformance_test_class_ogc_cdb_core_standard">A.1. Conformance Test Class: OGC CDB Core Standard</a>
 <ul class="sectlevel3">
-<li><a href="#_requirement_1">A.1.1. Requirement 1</a></li>
-<li><a href="#_requirement_2">A.1.2. Requirement 2</a></li>
+<li><a href="#_only_one_vector_data_encodingformat_per_version">A.1.1. Only one vector data encoding/format per version.</a></li>
+<li><a href="#_all_instances_of_a_given_feature_code_shall_be_of_the_same_geometry_type">A.1.2. All instances of a given feature code SHALL be of the same geometry type.</a></li>
+<li><a href="#_verify_that_implementations_support_the_literal_case_rules_as_specified_in_the_cdb_standard">A.1.3. Verify that implementations support the literal case rules as specified in the CDB standard</a></li>
+<li><a href="#_verify_that_geopackage_requirements_1_through_16_are_implemented">A.1.4. Verify that GeoPackage Requirements 1 through 16 are implemented</a></li>
+<li><a href="#_verify_that_the_crs_used_is_wgs_84_2d_or_3d">A.1.5. Verify that the CRS used is WGS-84 (2D or 3D)</a></li>
+<li><a href="#_verify_that_geopackage_requirements_18_through_33_are_implemented">A.1.6. Verify that GeoPackage Requirements 18 through 33 are implemented</a></li>
+<li><a href="#_verify_that_polygon_data_is_clean">A.1.7. Verify that polygon data is "clean"</a></li>
 </ul>
 </li>
 </ul>
@@ -1257,7 +1262,7 @@ such as hand-held tactical devices. These strengths and the self describing natu
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> Vector Format by Version </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-core" class="bare">http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-core</a><br>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core" class="bare">http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core</a><br>
 <br>
 Any version in a CDB data store <em>SHALL</em> contain one and only one vector data format.</p></td>
 </tr>
@@ -1302,7 +1307,7 @@ All instances of a given feature code <em>SHALL</em> be of the same geometry typ
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 12</strong> Tiled Vector Datasets Attribution  </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-gpkg-literal-case" class="bare">http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-gpkg-literal-case</a><br>
 <br>
-Implementations <em>SHALL</em> support the literal case rules as specified in the CDB standard. CDB file naming conventions are case sensitive. Further, regardless of case, any name such as “house” <em>SHALL</em> have the same semantic meaning. Addiotnally, any name <em>SHALL</em> have its first 10 characters as unique. Finally, the GeoPackage file extension .gpkg  <em>SHALL</em> always be lower case.</p></td>
+Implementations <em>SHALL</em> support the literal case rules as specified in the CDB standard. CDB file naming conventions are case sensitive. Further, regardless of case, any name such as “house” <em>SHALL</em> have the same semantic meaning. Additionally, any name <em>SHALL</em> have its first 10 characters as unique. Finally, the GeoPackage file extension .gpkg  <em>SHALL</em> always be lower case.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1326,7 +1331,7 @@ Implementations <em>SHALL</em> support the literal case rules as specified in th
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> GeoPackage Core </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.0/geopackage/geopackage-core" class="bare">http://www.opengis.net/spec/cdb/1.0/geopackage/geopackage-core</a><br>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.2/geopackage/geopackage-core" class="bare">http://www.opengis.net/spec/cdb/1.2/geopackage/geopackage-core</a><br>
 <br>
 Any CDB structured GeoPackage <em>SHALL</em> be compliant with GeoPackage Requirements 1 through 16 inclusive. Please see Requirement 4 of this standard for a restriction (profile) on GeoPackage Requirements 10 and 11 - Spatial Reference Systems (aka coordinate reference systems in CDB).</p></td>
 </tr>
@@ -1346,7 +1351,7 @@ Any CDB structured GeoPackage <em>SHALL</em> be compliant with GeoPackage Requir
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 4</strong> CDB - GeoPackage Core CRS </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-geopackage-core-crs" class="bare">http://www.opengis.net/spec/cdb/1.0/geopackage/cdb-geopackage-core-crs</a><br>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-geopackage-core-crs" class="bare">http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-geopackage-core-crs</a><br>
 <br>
 As per CDB Requirement 8, any CDB structured GeoPackage <em>SHALL</em> specify geographic locations  using WGS-84 (World Geodetic System 1984), equivalent to EPSG (European Petroleum Survey Group) code 4326 (2 dimensions) or EPSG code 4979 (3 dimensions).
 If a geographic location also has an altitude, the altitude <em>SHALL</em> be expressed relative to the WGS-84 reference ellipsoid.</p></td>
@@ -1390,15 +1395,14 @@ Any CDB structured GeoPackage that encodes features <em>SHALL</em> be compliant 
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 6</strong> GeoPackage polygon readers </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.0/geopackage/polygon-rules-reader" class="bare">http://www.opengis.net/spec/cdb/1.0/geopackage/polygon-rules-reader</a><br>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/cdb/1.2/geopackage/polygon-rules-reader" class="bare">http://www.opengis.net/spec/cdb/1.2/geopackage/polygon-rules-reader</a><br>
 <br>
-NOTE: This requirement needs to be discussed. Perhaps should be a data prep rule.
- Although the above are guidelines, GeoPackage readers <em>SHALL</em> handle the following cases with proper error handling
- and reporting for Polygon geometries:</p>
+GeoPackage readers <em>SHALL</em> handle the following cases with proper error handling and reporting for Polygon geometries:</p>
 <p class="tableblock"> * Has no self-intersections or co-linear segments</p>
 <p class="tableblock"> * Has no identical consecutive points (no zero-length segments)</p>
 <p class="tableblock"> * Does not degenerate into zero-area parts</p>
-<p class="tableblock"> * Does not have clock-wise inner rings (“Dirty Polygon”) </p></td>
+<p class="tableblock"> * Does not have clock-wise inner rings (“Dirty Polygon”) </p>
+<p class="tableblock">NOTE: This requirement may change in a future version. These cases may be handled as rules for data preparation.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1551,49 +1555,289 @@ Any CDB structured GeoPackage that encodes topologically structured vector data 
 <div class="sect1">
 <h2 id="_conformance_class_abstract_test_suite_normative"><a class="anchor" href="#_conformance_class_abstract_test_suite_normative"></a>Annex A: Conformance Class Abstract Test Suite (Normative)</h2>
 <div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
-</td>
-</tr>
-</table>
-</div>
 <div class="sect2">
-<h3 id="_conformance_class_a"><a class="anchor" href="#_conformance_class_a"></a>A.1. Conformance Class A</h3>
+<h3 id="_conformance_test_class_ogc_cdb_core_standard"><a class="anchor" href="#_conformance_test_class_ogc_cdb_core_standard"></a>A.1. Conformance Test Class: OGC CDB Core Standard</h3>
+<div class="paragraph">
+<p>This section describes conformance tests for the the optional extension to the CDB standard for structuring and storing any vector data as a GeoPackage container. These abstract test cases describe the conformance criteria for verifying the structure and content of any data store or database claiming conformance to the CDB 1.2 standard.</p>
+</div>
+<div class="paragraph">
+<p>The conformance class base id is “http://www.opengis.net/spec/cdb/1.2/” and all of the other conformance tests URLs are created in this path. Each conformace class then appends: "/conf/cdb-core/geopackage" to this base ID. Another issue that the reader should pay attention to is the test method. When the test method is assigned with “Visual”, it means that the purpose of the test should be “visually” investigate the file contents, image, or other content.</p>
+</div>
 <div class="sect3">
-<h4 id="_requirement_1"><a class="anchor" href="#_requirement_1"></a>A.1.1. Requirement 1</h4>
+<h4 id="_only_one_vector_data_encodingformat_per_version"><a class="anchor" href="#_only_one_vector_data_encodingformat_per_version"></a>A.1.1. Only one vector data encoding/format per version.</h4>
+<div class="paragraph">
+<p>The following conformance class verifies that each "version" in a CDB data store contains one and only one vector encoding/format.</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test id:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/conf/conf-class-a/req-name-1</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Conformance Class</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/conf/cdb-core/geopackage</strong></p></td>
 </tr>
 <tr>
-<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/req-class-a/req-name-1</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirements</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">/req/geopackage/cdb-core</p></td>
 </tr>
 <tr>
-<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test purpose:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Verify that&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Dependency</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">Volume 1: CDB Core - versioning.</p></td>
 </tr>
 <tr>
-<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test method:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Inspect&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test 1</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test purpose</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Verify that any version in a CDB data store contains one and only one vector data format.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test method</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Pass there is only one vector data type in a version.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test type</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Conformance</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_requirement_2"><a class="anchor" href="#_requirement_2"></a>A.1.2. Requirement 2</h4>
+<h4 id="_all_instances_of_a_given_feature_code_shall_be_of_the_same_geometry_type"><a class="anchor" href="#_all_instances_of_a_given_feature_code_shall_be_of_the_same_geometry_type"></a>A.1.2. All instances of a given feature code SHALL be of the same geometry type.</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Conformance Class</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/conf/cdb-core/geopackage</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirements</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">/req/geopackage/vector-geom-rule</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Dependency</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">Volume 1: CDB Core - geometry rule.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test 1</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test purpose</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Verify that all instances of a given feature code are of the same geometry type.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test method</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Pass if there is only one geometry type for a given feature code.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test type</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Conformance</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_verify_that_implementations_support_the_literal_case_rules_as_specified_in_the_cdb_standard"><a class="anchor" href="#_verify_that_implementations_support_the_literal_case_rules_as_specified_in_the_cdb_standard"></a>A.1.3. Verify that implementations support the literal case rules as specified in the CDB standard</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Conformance Class</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/conf/cdb-core/geopackage/cdb-gpkg-literal-case</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirements</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">/req/geopackage/cdb-gpkg-literal-case</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Dependency</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">Volume 1: CDB Core - literal.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test 12</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test purpose</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Verify that implementations support the literal case rules as specified in the CDB standard.  Additionally, any name SHALL have its first 10 characters as unique. Finally, the GeoPackage file extension .gpkg SHALL always be lower case.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test method</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Visual</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test type</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Conformance</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_verify_that_geopackage_requirements_1_through_16_are_implemented"><a class="anchor" href="#_verify_that_geopackage_requirements_1_through_16_are_implemented"></a>A.1.4. Verify that GeoPackage Requirements 1 through 16 are implemented</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Conformance Class</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/conf/cdb-core/geopackage/geopackage-core</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirements</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">/req/geopackage/geopackage-core</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Dependency</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">GeoPackage Requirements 1 through 16 inclusive and GeoPackage ATS.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test 3</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test purpose</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Any CDB structured GeoPackage SHALL be compliant with GeoPackage Requirements 1 through 16 inclusive.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test method</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">As per the GeoPackage Abstract Test Suite.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test type</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Conformance</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_verify_that_the_crs_used_is_wgs_84_2d_or_3d"><a class="anchor" href="#_verify_that_the_crs_used_is_wgs_84_2d_or_3d"></a>A.1.5. Verify that the CRS used is WGS-84 (2D or 3D)</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Conformance Class</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/conf/cdb-core/geopackage/cdb-geopackage-core-crs</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirements</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">/req/geopackage/cdb-geopackage-core-crs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Dependency</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">Volume 1: CDB Core - CDB Requirement 8 and GeoPackage Requirements 10 and 11.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test 4</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test purpose</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">As per CDB Requirement 8, any CDB structured GeoPackage SHALL specify geographic locations using WGS-84 (World Geodetic System 1984), equivalent to EPSG (European Petroleum Survey Group) code 4326 (2 dimensions) or EPSG code 4979 (3 dimensions). If a geographic location also has an altitude, the altitude SHALL be expressed relative to the WGS-84 reference ellipsoid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test method</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Verify that the CRS used are correct.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test type</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Conformance</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_verify_that_geopackage_requirements_18_through_33_are_implemented"><a class="anchor" href="#_verify_that_geopackage_requirements_18_through_33_are_implemented"></a>A.1.6. Verify that GeoPackage Requirements 18 through 33 are implemented</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Conformance Class</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/conf/cdb-core/geopackage/geopackage-features</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirements</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">/req/geopackage/geopackage-features</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Dependency</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">GeoPackage Requirements 18 through 33 inclusive and GeoPackage Requirements 146 and 150 and the GeoPackage ATS.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test 5</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test purpose</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Any CDB structured GeoPackage that encodes features SHALL be compliant with GeoPackage Requirements 18 through 33 inclusive and GeoPackage Requirements 146 and 150.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test method</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">As per the GeoPackage Abstract Test Suite.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test type</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Conformance</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_verify_that_polygon_data_is_clean"><a class="anchor" href="#_verify_that_polygon_data_is_clean"></a>A.1.7. Verify that polygon data is "clean"</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Conformance Class</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/conf/cdb-core/geopackage/polygon-rules-reader</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirements</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">/req/geopackage/polygon-rules-reader</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Dependency</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">CDB Vector Data Requirement.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test 6</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test purpose</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">GeoPackage readers SHALL handle the error cases with proper error handling and reporting for Polygon geometries.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test method</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Visual.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Test type</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Conformance</p></td>
+</tr>
+</tbody>
+</table>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
@@ -1804,7 +2048,7 @@ Ensure that there is a conformance class for each requirements class and a test 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-05-24 22:20:12 -0400
+Last updated 2020-05-25 22:19:30 -0400
 </div>
 </div>
 </body>
