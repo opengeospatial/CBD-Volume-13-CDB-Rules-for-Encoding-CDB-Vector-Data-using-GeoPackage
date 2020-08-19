@@ -1,0 +1,9 @@
+[cols=",,",]
+|==================================================================================================================================
+|*Conformance Class* 2+|*/conf/cdb-core/geopackage/cdb-gpkg-topology* 
+|*Requirements* 2+|http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-gpkg-topology
+|*Dependency* 2+| CDB Requirements 117 through 119 inclusive and CDB ATS.
+|*Test 13* |*Test purpose* |Verify that any CDB structured GeoPackage that encodes topologically structured vector data layers, such as roads, railroads, or hydrology, complies with CDB Requirements 117 through 119 inclusive.
+| |*Test method* |As per the CDB Abstract Test Suite.
+| |*Test type* |Conformance
+|==================================================================================================================================
