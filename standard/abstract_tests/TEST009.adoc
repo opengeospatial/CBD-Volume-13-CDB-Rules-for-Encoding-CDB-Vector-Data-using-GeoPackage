@@ -1,0 +1,9 @@
+[cols=",,",]
+|==================================================================================================================================
+|*Conformance Class* 2+|*/conf/cdb-core/geopackage/cdb-core-vector-tiled-data* 
+|*Requirements* 2+|http://www.opengis.net/spec/cdb/1.2/geopackage/cdb-core-vector-tiled-data
+|*Dependency* 2+| CDB Requirements 64 through 67 inclusive and CDB ATS.
+|*Test 9* |*Test purpose* |Verify that CDB structured GeoPackage that encodes vector features complies with CDB Core Tiled Data Requirements 64 through 67 inclusive.
+| |*Test method* |As per the CDB Abstract Test Suite.
+| |*Test type* |Conformance
+|==================================================================================================================================
