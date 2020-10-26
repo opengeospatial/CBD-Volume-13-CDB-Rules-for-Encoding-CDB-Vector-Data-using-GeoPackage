@@ -1,5 +1,5 @@
 == Requirements for Using GeoPackages in a CDB Data Store
-This section documents the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are _by reference_ to specific requirements in both the GeoPackage and CDB standards. The referenced requirements are known as _dependent_ requirements. For example, the GeoPackage standrds specifies that any valid GeoPackage shall have a file extension of .gpkg. The optional CDB GeoPackage extension specifies the same requirement.
+This section documents the mandatory requirements for having GeoPackage containers in a structured CDB data store. Many of the requirements are _by reference_ to specific requirements in both the GeoPackage and CDB standards. The referenced requirements are known as _dependent_ requirements. For example, the GeoPackage standard specifies that any valid GeoPackage shall have a file extension of .gpkg. The optional CDB GeoPackage extension specifies the same requirement.
 
 === General requirements
 
@@ -16,7 +16,7 @@ The following requirement clarifies the geometry types allowed for instances of 
 include::requirements/REQ002.adoc[]
 
 ==== Literal case including GeoPackage file names
-To ensure interoperability, file names and literal strings need to follow the case rules identified in both the CDB and GeoPackage Standards. The following requirement speciffies the literal case rules.
+To ensure interoperability, file names and literal strings need to follow the case rules identified in both the CDB and GeoPackage Standards. The following requirement specifies the literal case rules.
 
 include::requirements/REQ012.adoc[]
 
@@ -24,7 +24,7 @@ include::requirements/REQ012.adoc[]
 This section defines the GeoPackage requirements that need to be considered when implementing a CDB compliant GeoPackage for use in a CDB data store. This section also provides any clarifications and/or profiles of those requirements.
 
 ==== GeoPackage Requirements - core
-The following requirement captures all of the core GeoPackage requirements that need to be implemented in order to be a fully compliant GeoPackage for use in a CDB data store. Please note that GeoPackage Requirements 10 and 11 on Coordiante Reference Systems has been profiled to be consistent with the mandatory requirements in the CDB standard.
+The following requirement captures all of the core GeoPackage requirements that need to be implemented in order to be a fully compliant GeoPackage for use in a CDB data store. Please note that GeoPackage Requirements 10 and 11 on Coordinate Reference Systems has been profiled to be consistent with the mandatory requirements in the CDB standard.
 
 include::requirements/REQ003.adoc[]
 
@@ -33,10 +33,10 @@ The following requirement clarifies (profiles) GeoPackage requirements 10 and 11
 
 include::requirements/REQ004.adoc[]
 
-Please also note the definition of Volume 1 CDB Core Requirement 7 Units of Measure and Requirement 111 Vextex CRS for guidance on proper and compliant use of CRS in a CDB compliant GeoPackage.
+Please also note the definition of Volume 1 CDB Core Requirement 7 Units of Measure and Requirement 111 Vertex CRS for guidance on proper and compliant use of CRS in a CDB compliant GeoPackage.
 
 ==== GeoPackage Requirements Options - Features
-The following requirement clarifies the GeoPackage requirements that shall be followed when implementing vector fectures in a GeoPackage. Please note that GeoPackage geometry and feature definitions are consistent with the OGC Simple Features model and ISO 19107.
+The following requirement clarifies the GeoPackage requirements that shall be followed when implementing vector features in a GeoPackage. Please note that GeoPackage geometry and feature definitions are consistent with the OGC Simple Features model and ISO 19107.
 
 include::requirements/REQ005.adoc[]
 
@@ -79,7 +79,7 @@ include::requirements/REQ010.adoc[]
 ===== CDB Attribution
 Attributes are used to describe one or more real or virtual characteristics of a feature.  Features can be assigned a variable number of attributes. The following requirements from the core document and related informative discussion in Volume 1 Core describe the CDB compliant usage of attributes in a CDB datastore.
 
-Important Note: Each attribute is uniquely defined by an attribute identifier. In database terminoly this would be a column name or heading in a database table. This attribute identifier is a “case-sensitive” character string of 10 characters or less. Further, the 10 character must be a unique literal string so that all columns in a table have unique names.
+Important Note: Each attribute is uniquely defined by an attribute identifier. In database terminology this would be a column name or heading in a database table. This attribute identifier is a “case-sensitive” character string of 10 characters or less. Further, the 10 character must be a unique literal string so that all columns in a table have unique names.
 
 include::requirements/REQ011.adoc[]
 
@@ -87,4 +87,3 @@ include::requirements/REQ011.adoc[]
 If the vector data layer is topologically structures, such as road networks, then the following requirement SHALL apply for structuring these data layers in a CDB GeoPackage container. Please reference 5.7.1.6	Handling of Topological Networks in Volume 1 for detailed information on this set of requirements.
 
 include::requirements/REQ013.adoc[]
-
