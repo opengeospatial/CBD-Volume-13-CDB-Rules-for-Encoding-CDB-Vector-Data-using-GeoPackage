@@ -1,4 +1,4 @@
-# OGC 19-054 CDB Vector Data in Geopackage
+# OGC CDB Volume 13 19-054 CDB Vector Data in Geopackage
 
 This GitHub repository contains the content for a draft document on structuring a GeoPackage to be compliant with the requirements for vector data in a CDB data store.
 
