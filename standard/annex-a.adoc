@@ -42,23 +42,23 @@ include::abstract_tests/TEST006.adoc[]
 
 ==== CDB general data requirements for GeoPackage
 
-include::abstract_tests/TEST07.adoc[]
+include::abstract_tests/TEST007.adoc[]
 
 ==== CDB Tiles/Geocells and LoD relationships for GeoPackage
 
-include::abstract_tests/TEST08.adoc[]
+include::abstract_tests/TEST008.adoc[]
 
 ==== Tiled Vector data in a GeoPackage
 
-include::abstract_tests/TEST09.adoc[]
+include::abstract_tests/TEST009.adoc[]
 
 ==== Tiled Vector Datasets
 
-include::abstract_tests/TEST10.adoc[]
+include::abstract_tests/TEST010.adoc[]
 
 ==== Tiled Vector Datasets Attribution
 
-include::abstract_tests/TEST11.adoc[]
+include::abstract_tests/TEST011.adoc[]
 
 ==== Tiled Vector Topological Networks
 

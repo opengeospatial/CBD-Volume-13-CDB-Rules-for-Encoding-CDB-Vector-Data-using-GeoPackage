@@ -17,9 +17,9 @@
 |[big]*Open Geospatial Consortium*
 |Submission Date: 2020-01-21
 |Approval Date:   2020-08-24
-|Publication Date:   <2020-mm-dd>
+|Publication Date:   2021-02-26
 |External identifier of this OGC(R) document: http://www.opengis.net/doc/IS/cdb-geopackage/1.2
-|Internal reference number of this OGC(R) document:    19-054
+|Internal reference number of this OGC(R) document:    20-050-054
 |Version: 1.2
 |Category: OGC(R) Implementation Standard
 |Editor:   Carl Reed
@@ -33,8 +33,8 @@
 [cols = "^", frame = "none", grid = "none"]
 |===
 |*Copyright notice*
-|Copyright (C) 2020 Open Geospatial Consortium
-|To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
+|Copyright (C) 2021 Open Geospatial Consortium
+|To obtain additional rights of use, visit http://www.ogc.org/legal/
 |===
 
 [cols = "^", frame = "none"]
