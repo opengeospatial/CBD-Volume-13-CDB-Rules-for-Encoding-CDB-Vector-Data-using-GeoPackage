@@ -1,6 +1,6 @@
 [big]*i.     Abstract*
 
-This optional OGC CDB 2.0 Application Profile defines the requirements and provides CDB specific guidance on using GeoPackage containers in a CDB 2.0 data store. A number of requirements in this Application Profile are restrictions of requirements specified in the CDB 2.0 Core Requirements Module.
+This Standard defines a OGC CDB 2.0 Application Profile for using GeoPackage a storage container in a CDB 2.0 and later compliant datastore. Key requirements in this Application Profile are restrictions of requirements specified in the CDB 2.0 Core Requirements Module. Other requirements such as for file naming are derived from CDB 1.x Requirements.
 
 [big]*ii.    Keywords*
 
@@ -10,11 +10,15 @@ ogcdoc, OGC document, CDB, GeoPackage, Application Profile
 
 [big]*iii.   Preface*
 
-*Background for this optional CDB Application Profile*
+*Background of the CDB GeoPackage Application Profile*
 
-The original requirement for this optional CDB Application Profile was documented in http://ogc.standardstracker.org/show_request.cgi?id=545[OGC Change Request 545]. This OGC change request was submitted based on work performed in http://docs.opengeospatial.org/per/17-042.html[OGC Testbed 13]. The testbed activity and related change request captured a broad community requirement for being able to use GeoPackage containers in a CDB data store. At the same time, an additional requirement was identified to test and identify best practices for moving CDB vector files stored as Shapefiles into one or more GeoPackages.
+The original requirement for storing GeoPackage structured content in a CDB dtastore is documented in http://ogc.standardstracker.org/show_request.cgi?id=545[OGC Change Request 545]. This OGC change request was submitted based on work performed in http://docs.opengeospatial.org/per/17-042.html[OGC Testbed 13]. The testbed activity and related change request captured a broad community requirement for being able to use GeoPackage containers in a CDB data store. At the same time, an additional requirement was identified to test and identify best practices for moving CDB vector files stored as Shapefiles into one or more GeoPackages.
 
 In 2019, the CDB SWG executed the https://docs.opengeospatial.org/per/19-007.html[CDB Vector Data in GeoPackage Interoperability Experiment (IE)]. The participants in this IE tested transforming CDB Shapefile vector data into one or more GeoPackage(s) and storing the result in a CDB data store. GeoPackage Version 1.2 and CDB Version 1.1 and related Best Practices were the standards baseline used for this experiment. The IE built on the work described in the https://portal.opengeospatial.org/files/?artifact_id=82553[OGC CDB, Leveraging the GeoPackage Discussion Paper]. A primary objective of the IE was to agree and document possible change requests and/or best practices for storing vector data in a CDB data using encodings and/or containers other than Shapefiles.
+
+The research and implementation work continued in May 2020 when SOFWERX announced the 3D Geospatial Series Tech Sprint II – OGC CDB 2.0. In support of Special Operations Forces (SOF) Future Concepts, this effort focused on accelerating evolution of the OGC CDB standard to meet the needs of planning, rehearsal, and Mission Command systems providing decision support to SOF and enabling SOF tactical and operational advantage. Additionally, there was a desire to better align aspects of the CDB standard with the U.S. Army One World Terrain activity was expressed during the initial workshop. One of the five work items was to develop guidelines, rules, and requirements for storing CDB structured vector and coverage content in one or more GeoPackage compliant containers.
+
+The end result of these various activities was the definition and approval of the https://docs.ogc.org/is/20-050/20-050.html[OGC CDB Volume 13 19-054 CDB Vector Data in Geopackage Standard]. The next step in the evolution of using GeoPackage(s) in a CDN datastore is this optional CDB 2.0 GeoPackage Application Profile Standard.
 
 *OGC Patent Declaration*
 
