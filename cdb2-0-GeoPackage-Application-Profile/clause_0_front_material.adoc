@@ -1,6 +1,6 @@
 [big]*i.     Abstract*
 
-This Standard defines a OGC CDB 2.0 Application Profile for using GeoPackage a storage container in a CDB 2.0 and later compliant datastore. Key requirements in this Application Profile are restrictions of requirements specified in the CDB 2.0 Core Requirements Module. Other requirements such as for file naming are derived from CDB 1.x Requirements.
+This Standard defines a OGC CDB 2.0 Application Profile for using GeoPackage compliant storage containers in a CDB 2.0 and later compliant datastore. Key requirements in this Application Profile are restrictions of requirements specified in the CDB 2.0 Core Requirements Module. Other requirements such as for file naming are derived from CDB 1.x Requirements.
 
 [big]*ii.    Keywords*
 
@@ -10,7 +10,7 @@ ogcdoc, OGC document, CDB, GeoPackage, Application Profile
 
 [big]*iii.   Preface*
 
-*Background of the CDB GeoPackage Application Profile*
+*Background of the CDB 2.0 GeoPackage Application Profile*
 
 The original requirement for storing GeoPackage structured content in a CDB dtastore is documented in http://ogc.standardstracker.org/show_request.cgi?id=545[OGC Change Request 545]. This OGC change request was submitted based on work performed in http://docs.opengeospatial.org/per/17-042.html[OGC Testbed 13]. The testbed activity and related change request captured a broad community requirement for being able to use GeoPackage containers in a CDB data store. At the same time, an additional requirement was identified to test and identify best practices for moving CDB vector files stored as Shapefiles into one or more GeoPackages.
 
