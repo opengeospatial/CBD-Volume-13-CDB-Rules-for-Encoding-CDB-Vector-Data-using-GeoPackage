@@ -84,6 +84,6 @@ Important Note: Each attribute is uniquely defined by an attribute identifier. I
 include::requirements/REQ011.adoc[]
 
 ===== Topology
-If the vector data layer is topologically structures, such as road networks, then the following requirement SHALL apply for structuring these data layers in a CDB GeoPackage container. Please reference 5.7.1.6	Handling of Topological Networks in Volume 1 for detailed information on this set of requirements.
+If the vector data layer is topologically structured, such as road networks, then the following requirement SHALL apply for structuring these data layers in a CDB GeoPackage container. Please reference 5.7.1.6	Handling of Topological Networks in Volume 1 for detailed information on this set of requirements.
 
 include::requirements/REQ013.adoc[]
