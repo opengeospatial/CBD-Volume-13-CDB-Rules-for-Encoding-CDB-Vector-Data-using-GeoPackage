@@ -8,21 +8,21 @@
 :toclevels: 3
 :numbered:
 :sectanchors:
-:source-highlighter: pygments
+:source-highlighter: coderay
 
 <<<
 [cols = ">",frame = "none",grid = "none"]
 |===
 |{set:cellbgcolor:#FFFFFF}
 |[big]*Open Geospatial Consortium*
-|Submission Date: 2020-01-21
-|Approval Date:   2020-08-24
-|Publication Date:   2021-02-26
-|External identifier of this OGC(R) document: http://www.opengis.net/doc/IS/cdb-geopackage/1.2
-|Internal reference number of this OGC(R) document:    20-050-054
+|Submission Date: 2023-XX-XX
+|Approval Date:   2023-XX-XX
+|Publication Date:   2023-XX-XX
+|External identifier of this OGC(R) document: http://www.opengis.net/doc/IS/cdb-geopackage/1.3
+|Internal reference number of this OGC(R) document:    20-050-054 ?? 19-054r?
 |Version: 1.2
 |Category: OGC(R) Implementation Standard
-|Editor:   Carl Reed
+|Editor:   Carl Reed, David Graham
 |===
 
 [cols = "^", frame = "none"]
@@ -33,7 +33,7 @@
 [cols = "^", frame = "none", grid = "none"]
 |===
 |*Copyright notice*
-|Copyright (C) 2021 Open Geospatial Consortium
+|Copyright (C) 2023 Open Geospatial Consortium
 |To obtain additional rights of use, visit http://www.ogc.org/legal/
 |===
 
@@ -48,7 +48,7 @@ This document is an OGC Member approved international standard. This document is
 |===
 |Document type:   	OGC® Standard
 |Document subtype:   
-|Document stage:   	Approved
+|Document stage:   	Draft
 |Document language: 	English
 |===
 
