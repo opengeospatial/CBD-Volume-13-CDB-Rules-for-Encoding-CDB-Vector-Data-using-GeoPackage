@@ -7,5 +7,5 @@
 |Date |Release |Editor | Primary clauses modified |Description
 |2019-11-06 |1.2 |C. Reed |all |initial version
 |2023-08-01 |1.3 |D. Graham | Front Matter, History|Editorial updates only for V1.3
-|2023-09-16 |1.3 |C. Reed   | A number of edits to various clauses
+|2023-09-16 |1.3 |C. Reed   | Various clauses | Editorial
 |===
