@@ -28,20 +28,22 @@ The following organizations submitted this Document to the Open Geospatial Conso
 
 Organization name(s)
 
-[red]#*_Placeholder# for the list of CDB SWG Voting Members who cast a ballot in the SWG eVote approving the draft document for submission to the OAB and request for public comment_*
-
-
-[big]*v.     Submitters*
-
-* Carl Reed & Associates
+* Carl Reed, individual OGC Member
 * FlightSafety Visual Systems
 * CAE Inc.
+* UK Met Office
+* Ecere Corporation
+* The Joint Staff
+* FSI International Visual Systems
+* SimBlocks LLC
+
+[big]*v.     Submitters*
 
 All questions regarding this submission should be directed to the editor or the submitters:
 
 |===
 |*Name* |*Affiliation*
-|Carl Reed _(editor)_ |Carl Reed & Associates
+|Carl Reed  |Carl Reed & Associates
 |Ryan Franz |FlightSafety Visual Systems
 |David Graham |CAE Inc.
 |===
